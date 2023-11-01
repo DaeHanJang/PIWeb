@@ -84,11 +84,17 @@ section aside {
     padding: 20px 0px;
     background: plum;
 }
+section aside ul #cursor li {
+    font-weight: bold;
+    color: white;
+    background: purple;
+}
 section aside ul a li {
     height: 50px;
     display: flex;
     font-size: 15px;
     color: black;
+    line-height: 50px;
 }
 section aside ul a li:hover {
     font-weight: bold;
@@ -96,22 +102,52 @@ section aside ul a li:hover {
     background: purple;
 }
 section #list {
-    width: 1000px; height: 80vh;
+    width: 1300px; height: 80vh;
     margin: 50px 50px;
     overflow: auto;
 }
-section #list ol {
-    list-style-type: decimal;
+section #list::-webkit-scrollbar {
+    width: 10px;
 }
-section #list ol li {
-    margin: 5px 0px;
+section #list::-webkit-scrollbar-thumb {
+    background: purple;
+    border-radius: 10px;
 }
-section #list ol li a {
+section #list::-webkit-scrollbar-track {
+    background: rgb(245, 230, 255);
+    border-radius: 10px;
+}
+section #list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+section #list ul li {
+    width: 200px; height: 300px;
+    margin: 10px 20px;
+}
+section #list ul li a:hover div h2{
+    color: lightseagreen
+}
+section #list ul li a .listimg {
+    width: 200px; height: 150px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+section #list ul li a .listimg img {
+    width: 200px; height: 150px;
+}
+section #list ul li a .listetxt{
+    width: 150px; height: 200px;
+    margin-top: 10px;
+}
+section #list ul li a .listtext h2 {
     font-size: 20px;
     color: black;
 }
-section #list ol li a:hover {
-    color: lightseagreen;
+section #list ul li a .listtext p {
+    font-size: 15px;
+    color: gray;
 }
 footer {
     width: 100%; height: 100px;
