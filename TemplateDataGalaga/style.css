@@ -1,0 +1,120 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%; height: 150px;
+    background: rgb(245, 230, 255);
+    position: relative;
+}
+header #header_base {
+    width: 100%; height: 100%;
+    position: relative;
+}
+header #header_base h1 {
+    position: absolute; left: 100px; bottom: 30px;
+}
+header #header_base h1 a {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+header #header_base h1 a span.lower {
+    font-size: 20px;
+}
+header #header_base nav {
+    position: absolute; right: 150px; bottom: 35px;
+}
+header #header_base nav ul li {
+    float: left;
+    margin: 0px 50px;
+}
+header #header_base nav ul li a {
+    font-size: 20px;
+    color: black;
+    transition-duration: 0.5s;
+}
+header #header_base nav ul li a:hover {
+    color: lightseagreen;
+}
+header .gear1 {
+    width: 150px; height: 150px;
+    position: absolute;
+    overflow: hidden;
+}
+header .gear2 {
+    width: 150px; height: 150px;
+    position: absolute;
+    overflow: hidden;
+}
+header .gear1 img {
+    width: 150px; height: 150px;
+    position: absolute;
+    animation-name: gear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+header .gear2 img {
+    width: 150px; height: 150px;
+    position: absolute;
+    animation-name: gear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+@keyframes gear {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+section {
+    display: flex;
+    height: 80vh;
+    position: relative; 
+}
+section aside {
+    width: 200px;
+    padding: 20px 0px;
+    background: plum;
+}
+section aside ul #cursor li {
+    font-weight: bold;
+    color: white;
+    background: purple;
+}
+section aside ul a li {
+    height: 50px;
+    display: flex;
+    font-size: 15px;
+    color: black;
+    line-height: 50px;
+}
+section aside ul a li:hover {
+    font-weight: bold;
+    color: white;
+    background: purple;
+}
+section #unity-container { position: absolute }
+section #unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+section #unity-container.unity-mobile { width: 100%; height: 100% }
+section #unity-canvas { background: #1F1F20 }
+section .unity-mobile #unity-canvas { width: 100%; height: 100% }
+section #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+section #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
+section #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
+section #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
+section #unity-footer { position: relative }
+section .unity-mobile #unity-footer { display: none }
+section #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
+section #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+section #unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+section #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
