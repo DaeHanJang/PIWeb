@@ -133,7 +133,6 @@ section ul {
     width: 70%; height: 85vh;
     margin: 0 auto;
     overflow: hidden;
-    border: 1px solid black;
 }
 section ul #scroll {
     width: 2100px; height: 85vh;

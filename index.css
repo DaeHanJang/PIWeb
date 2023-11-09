@@ -83,64 +83,88 @@ section article {
     margin: 10px 200px;
     position: relative;
 }
-section article a {
+section article .articleimg{
     width: 1000px; height: 500px;
     border-radius: 25px;
+    transition-duration: 0.1s;
 }
-section article a .articletext {
+section article .articleimg:hover{
+    transform: scale(1.025);
+}
+section .article1 .articletext {
     position: absolute;
-    top: 30px;
+    top: 30px; left: 30px;
     z-index: 1;
+    animation-name: intextleft;
     animation-duration: 0.5s;
 }
-section article a .articletext h1 {
+section .article1 .articletext h1 {
     font-size: 60px;
     font-weight: bold;
     text-shadow: 4px 4px 4px black;
     color: white;
 }
-section article a .articleimg {
-    width: 1000px; height: 500px;
-    position: absolute; top: 0px;
-    border-radius: 25px;
-    overflow: hidden;
-    animation-duration: 0.5s;
-}
-section article a:hover .articleimg img{
-    transform: scale(1.05);
-}
-section article a .articleimg img {
-    width: 1000px;
-    position: absolute; left: 0px; top: 0px;
-}
-section .article1 a .articletext {
-    left: 30px;
-    animation-name: intextleft;
-}
-section .article1 a .articletext p {
+section .article1 .articletext p {
     font-size: 20px;
     text-shadow: 4px 4px 4px black;
     color: white;
 }
-section .article1 a .articleimg {
-    left: 0px;
+section .article1 .articleimg {
+    position: absolute; left: 0px; top: 0px;
+    overflow: hidden;
     animation-name: inleft;
+    animation-duration: 0.5s;
 }
-section .article2 a .articletext {
-    right: 30px;
+section .article1 .articleimg a img {
+    width: 1000px;
+    position: absolute; left: 0px; top: 0px;
+    box-shadow: inset 5px 5px 5px 5px white;
+}
+section .article2 .articletext {
+    position: absolute;
+    top: 30px; right: 30px;
+    z-index: 1;
     animation-name: intextright;
+    animation-duration: 0.5s;
 }
-section .article2 a .articleimg {
-    right: 0px;
+section .article2 .articletext h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px black;
+    color: white;
+}
+section .article2 .articleimg {
+    position: absolute; right: 0px; top: 0px;
+    overflow: hidden;
     animation-name: inright;
+    animation-duration: 0.5s;
 }
-section .article3 a .articletext {
-    left: 30px;
+section .article2 .articleimg a img {
+    width: 1000px;
+    position: absolute; right: 0px; top: 0px;
+}
+section .article3 .articletext {
+    position: absolute;
+    top: 30px; left: 30px;
+    z-index: 1;
     animation-name: intextleft;
+    animation-duration: 0.5s;
 }
-section .article3 a .articleimg {
-    left: 0px;
+section .article3 .articletext h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px black;
+    color: white;
+}
+section .article3 .articleimg {
+    position: absolute; left: 0px; top: 0px;
+    overflow: hidden;
     animation-name: inleft;
+    animation-duration: 0.5s;
+}
+section .article3 .articleimg a img {
+    width: 1000px;
+    position: absolute; left: 0px; top: 0px;
 }
 @keyframes intextleft {
     0% {

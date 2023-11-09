@@ -94,7 +94,6 @@ section aside ul a li {
     display: flex;
     font-size: 15px;
     color: black;
-    line-height: 50px;
 }
 section aside ul a li:hover {
     font-weight: bold;
@@ -103,7 +102,7 @@ section aside ul a li:hover {
 }
 section #list {
     width: 1300px; height: 80vh;
-    margin: 50px 50px;
+    margin: 50px auto;
     overflow: auto;
 }
 section #list::-webkit-scrollbar {

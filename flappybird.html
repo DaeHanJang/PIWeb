@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | New Unity Project</title>
-    <link rel="shortcut icon" href="TemplateDataGalaga/favicon.ico">
-    <link rel="stylesheet" href="TemplateDataGalaga/style.css">
+    <title>Unity WebGL Player | FlappyBird</title>
+    <link rel="shortcut icon" href="TemplateDataFlappyBird/favicon.ico">
+    <link rel="stylesheet" href="TemplateDataFlappyBird/style.css">
   </head>
   <body>
     <header>
@@ -27,16 +27,16 @@
     <section>
       <aside>
         <ul>
-            <a href="flappybird.html"><li>Flappy Bird</li></a>
+            <a id="cursor" href="#"><li>Flappy Bird</li></a>
             <a href="angrybird.html"><li>Angry Bird</li></a>
-            <a id="cursor" href="#"><li>Galaga</li></a>
+            <a href="galaga.html"><li>Galaga</li></a>
             <a href="#"><li>Temp1</li></a>
             <a href="#"><li>Temp2</li></a>
             <a href="#"><li>Temp3</li></a>
         </ul>
-    </aside>
+      </aside>
       <div id="unity-container" class="unity-desktop">
-        <canvas id="unity-canvas" width=960 height=600></canvas>
+        <canvas id="unity-canvas" width=800 height=450></canvas>
         <div id="unity-loading-bar">
           <div id="unity-logo"></div>
           <div id="unity-progress-bar-empty">
@@ -47,7 +47,7 @@
         <div id="unity-footer">
           <div id="unity-webgl-logo"></div>
           <div id="unity-fullscreen-button"></div>
-          <div id="unity-build-title">New Unity Project</div>
+          <div id="unity-build-title">FlappyBird</div>
         </div>
       </div>
     </section>
@@ -86,7 +86,7 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "BuildGalaga";
+      var buildUrl = "BuildFlappyBird";
       var loaderUrl = buildUrl + "/WebGL.loader.js";
       var config = {
         dataUrl: buildUrl + "/WebGL.data.unityweb",
@@ -94,7 +94,7 @@
         codeUrl: buildUrl + "/WebGL.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "New Unity Project",
+        productName: "FlappyBird",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -126,8 +126,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "450px";
-        canvas.style.height = "800px";
+        canvas.style.width = "800px";
+        canvas.style.height = "450px";
       }
 
       loadingBar.style.display = "block";
