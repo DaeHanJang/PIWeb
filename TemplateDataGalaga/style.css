@@ -1,80 +1,53 @@
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    color: black;
+    text-decoration: none;
 }
 ul {
     list-style-type: none;
 }
-a {
-    text-decoration: none;
-}
 header {
-    width: 100%; height: 150px;
-    background: rgb(245, 230, 255);
-    position: relative;
+    width: 100%; height: 100px;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 245, 255);
 }
-header #header_base {
-    width: 100%; height: 100%;
-    position: relative;
+header .base {
+    width: 1500px; height: 100px;
+    display: flex;
 }
-header #header_base h1 {
-    position: absolute; left: 100px; bottom: 30px;
+header .base .mainlogo {
+    width: 300px; height: 100px;
+    text-align: center;
+    line-height: 100px;
 }
-header #header_base h1 a {
-    font-size: 40px;
-    font-weight: bold;
-    color: black;
+header .base nav {
+    width: calc(100% - 300px); height: 100px;
+    display: flex;
+    justify-content: center;
 }
-header #header_base h1 a span.lower {
-    font-size: 20px;
+header .base nav ul {
+    height: 30px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
-header #header_base nav {
-    position: absolute; right: 150px; bottom: 35px;
+header .base nav ul li {
+    width: 150px; height: 30px;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 30px;
 }
-header #header_base nav ul li {
-    float: left;
-    margin: 0px 50px;
-}
-header #header_base nav ul li a {
-    font-size: 20px;
-    color: black;
-    transition-duration: 0.5s;
-}
-header #header_base nav ul li a:hover {
+header .base nav ul li a:hover {
     color: lightseagreen;
 }
-header .gear1 {
-    width: 150px; height: 150px;
-    position: absolute;
-    overflow: hidden;
-}
-header .gear2 {
-    width: 150px; height: 150px;
-    position: absolute;
-    overflow: hidden;
-}
-header .gear1 img {
-    width: 150px; height: 150px;
-    position: absolute;
-    animation-name: gear;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-header .gear2 img {
-    width: 150px; height: 150px;
-    position: absolute;
-    animation-name: gear;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: reverse;
-}
-@keyframes gear {
-    100% {
-        transform: rotate(360deg);
-    }
+header .base nav #cursor {
+    font-weight: bold;
 }
 section {
     display: flex;
@@ -118,13 +91,58 @@ section #unity-webgl-logo { float:left; width: 204px; height: 38px; background: 
 section #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 section #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 footer {
-    width: 100%; height: 100px;
-    position: relative;
-    background: rgb(245, 230, 255);
+    width: 100%; height: 400px;
+    display: flex;
+    justify-content: center;
+    background: darkgray;
 }
-footer h1 {
-    position: absolute;
-    left: 10%; bottom: 50%;
-    font-size: 20px;
+footer .base {
+    width: 1500px; height: 400px;
+    display: flex;
+}
+footer .base .mainlogo {
+    width: 300px; height: 400px;
+    text-align: center;
+    line-height: 400px;
+}
+footer .base .mainlogo h1 {
+    color: gray;
+}
+footer .base .content {
+    width: calc(100% - 300px); height: 400px;
+}
+footer .base .content .sitemap {
+    width: 100%; height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+footer .base .content .sitemap ul {
+    width: 200px; height: 280px;
+    margin-top: 20px;
+}
+footer .base .content .sitemap ul li {
+    width: 200px; height: 20px;
+    line-height: 20px;
+}
+footer .base .content .sitemap ul li:first-child {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+footer .base .content .sitemap ul li a {
+    font-size: 15px;
+    color: gray;
+}
+footer .base .content .sitemap ul li a:hover {
+    color: white;
+}
+footer .base .content .info {
+    width: 100%; height: 100px;
+    overflow: hidden;
+}
+footer .base .content .info p {
+    width: 100%; height: 20px;
+    overflow: hidden;
+    font-size: 15px;
     color: gray;
 }

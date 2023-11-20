@@ -50,79 +50,65 @@ header .base nav #cursor {
     font-weight: bold;
 }
 section {
-    width: 100%; height: 1100px;
-    display: flex;
-    flex-direction: column;
+    width: 100%; height: calc(100vh - 100px);
+    position: relative;
 }
-section #base1 {
-    width: 100%; height: 500px;
+section input {
+    display: none;
+}
+section .inner {
+    width: 100%; height: calc(100vh - 100px);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
-    overflow: hidden;
-    animation-name: fadein;
-    animation-duration: 1s;
+    background: lightgreen;
 }
-section #base1 .boxbase {
-    width: 1500px; height: 500px;
-    display: flex;
+section .inner li {
+    width: 100%; height: calc(100vh - 100px);
+    background: coral;
 }
-section #base1 .boxbase .main {
-    width: 500px; height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section .inner li img {
+    object-fit: cover;
 }
-section #base1 .boxbase .main img {
-    width: 300px; height: 400px;
+section [class*="page"] {
+    display: none;
 }
-section #base1 .boxbase .content {
-    width: 1000px; height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+section #slide1:checked ~ ul li {
+    transform: translateX(0%);
 }
-section #base1 .boxbase .content h1 {
-    font-size: 40px;
+section #slide1:checked ~ .page1 {
+    display: block;
 }
-section #base1 .boxbase .content p {
-    font-size: 20px;
+section #slide2:checked ~ ul li {
+    transform: translateX(-100%);
 }
-section #base1 .boxbase .content #name {
-    width: 700px;
-    text-align: end;
-    font-size: 25px;
+section #slide2:checked ~ .page2 {
+    display: block;
 }
-section #base2 {
-    width: 100%; height: 600px;
-    display: flex;
-    justify-content: center;
-    background: rgb(245, 245, 245);
+section #slide3:checked ~ ul li {
+    transform: translateX(-200%);
 }
-section #base2 .boxbase {
-    width: 1500px; height: 600px;
-    display: flex;
-    overflow: hidden;
+section #slide3:checked ~ .page3 {
+    display: block;
 }
-section #base2 .boxbase div {
-    width: 750px; height: 600px;
+section div .left {
+    width: 100px; height: 100px;
+    position: absolute;
+    top: 50%; left: 50px;
+    background-image: url(left.png);
+    opacity: 0.5;
 }
-section #base2 .boxbase div div {
-    width: 750px; height: 200px;
-    padding: 20px;
+section div .left:hover {
+    opacity: 1;
 }
-section #base2 .boxbase div div p {
-    font-size: 25px;
-    font-weight: bold;
+section div .right {
+    width: 100px; height: 100px;
+    position: absolute;
+    top: 50%; right: 50px;
+    background-image: url(right.png);
+    opacity: 0.5;
 }
-section #base2 .boxbase div div ul {
-    padding-left: 40px;
-    list-style-type: disc;
-}
-section #base2 .boxbase div div ul li span {
-    font-size: 10px;
+section div .right:hover {
+    opacity: 1;
 }
 footer {
     width: 100%; height: 400px;
@@ -179,14 +165,4 @@ footer .base .content .info p {
     overflow: hidden;
     font-size: 15px;
     color: gray;
-}
-@keyframes fadein {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 100%;
-    }
 }

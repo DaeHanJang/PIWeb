@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>PI Web - Games</title>
-        <link rel="stylesheet" text="text/css" href="games.css">
+        <link rel="stylesheet" text="text/css" href="test.css">
     </head>
     <body>
         <header>
@@ -19,36 +19,37 @@
             </div>
         </header>
         <section>
-            <div id="btnleft"><img src="left.png"></div>
-            <ul>
-                <div id="scroll">
-                    <li><a href="flappybird.html">
-                        <img src="FlappyBird.png">
-                        <h2>Flappy Bird</h2>
-                    </a></li>
-                    <li><a href="angrybird.html">
-                        <img src="angrybird.png">
-                        <h2>Angry Bird</h2>
-                    </a></li>
-                    <li><a href="galaga.html">
-                        <img src="galaga.png">
-                        <h2>Galaga</h2>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="galaga.png">
-                        <h2>Temp1</h2>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="galaga.png">
-                        <h2>Temp2</h2>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="galaga.png">
-                        <h2>Temp3</h2>
-                    </a></li>
-                </div>
-            </ul>
-            <div id="btnright"><img src="right.png"></div>
+            <input type="radio" name="slide1" id="slide1" checked>
+            <input type="radio" name="slide1" id="slide2">
+            <input type="radio" name="slide1" id="slide3">
+            <ul class="inner">
+                <li class="box1">
+                    <img src="flappybird.png">
+                </li>
+                <li class="box2">
+                    <img src="angrybird.png">
+                </li>
+                <li class="box3">
+                    <img src="galaga.png">
+                </li>
+            </ul>        
+            <!--<div class="outter">
+                <ul>
+                    <li class="flappybird"></li>
+                    <li class="angrybird"></li>
+                    <li class="galaga"></li>
+                </ul>
+            </div>-->
+            <div class="page1">
+                <label for="slide2" class="right"></label>
+            </div>
+            <div class="page2">
+                <label for="slide1" class="left"></label>
+                <label for="slide3" class="right"></label>
+            </div>
+            <div class="page3">
+                <label for="slide2" class="left"></label>
+            </div>
         </section>
         <footer>
             <div class="base">
