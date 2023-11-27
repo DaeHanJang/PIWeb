@@ -2,18 +2,21 @@
 <html>
     <head>
         <title>PI Web - etc</title>
-        <link rel="stylesheet" text="text/css" href="etc.css">
+        <link rel="stylesheet" text="text/css" href="header.css">
+        <link rel="stylesheet" text="text/css" href="algorithmlist.css">
+        <link rel="stylesheet" text="text/css" href="footer.css">
     </head>
     <body>
         <header>
             <div class="base">
-                <div class="mainlogo"><h1><a href="index.html">PeanutInput</a></h1></div>
+                <div class="logo">
+                    <h1><a href="index.html">PeanutInput</a></h1>
+                </div>
                 <nav>
                     <ul>
-                        <li><a href="introduction.html">Introduction</a></li>
-                        <li id="cursor"><a href="algorithms.html">Algorithms</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="paper.html">Papers</a></li>
+                        <a href="algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="games.html"><li>Games</li></a>
+                        <a href="paper.html"><li>Papers</li></a>
                     </ul>
                 </nav>
             </div>
@@ -21,578 +24,725 @@
         <section>
             <aside>
                 <ul>
-                    <a href="dynamic.html"><li>Dynamic Programing</li></a>
-                    <a href="graph.html"><li>DFS, BFS</li></a>
+                    <a href="dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="graph.html"><li>Graph</li></a>
                     <a href="binary.html"><li>Binary Search</li></a>
-                    <a href="bruteforce.html"><li>Brute Force</li></a>
+                    <a href="bruteforce.html"><li>BruteForce</li></a>
                     <a href="greedy.html"><li>Greedy</li></a>
                     <a href="ccw.html"><li>CCW</li></a>
-                    <a id="cursor" href="#"><li>etc.</li></a>
+                    <a href="etc.html" id="cursor2"><li>Etc.</li></a>
                 </ul>
             </aside>
-            <div id="list">
-                <ul>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>나머지</h2>
-                            <p>10430</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>팩토리얼</h2>
-                            <p>10872</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>음계</h2>
-                            <p>02920</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>나누기</h2>
-                            <p>01075</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>분수찾기</h2>
-                            <p>01193</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>A+B - 6</h2>
-                            <p>10953</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>벌집</h2>
-                            <p>02292</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>최댓값</h2>
-                            <p>02562</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>오르막길</h2>
-                            <p>02846</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>상수</h2>
-                            <p>02908</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>24</h2>
-                            <p>01408</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 20</h2>
-                            <p>10995</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 21</h2>
-                            <p>10996</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>더하기 사이클</h2>
-                            <p>01110</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>평균</h2>
-                            <p>01546</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>뒤집힌 덧셈</h2>
-                            <p>01357</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>달팽이는 올라가고 싶다</h2>
-                            <p>02869</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>나머지와 몫이 같은 수</h2>
-                            <p>01834</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>반올림</h2>
-                            <p>02033</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>막대기</h2>
-                            <p>01094</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>쉽게 푸는 문제</h2>
-                            <p>01292</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>소수</h2>
-                            <p>02581</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>개미</h2>
-                            <p>10158</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>동전 게임</h2>
-                            <p>10837</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 19</h2>
-                            <p>10994</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>팩토리얼 0의 개수</h2>
-                            <p>01676</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>수 이어 쓰기 1</h2>
-                            <p>01748</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>영식이의 손가락</h2>
-                            <p>01614</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>조합 0의 개수</h2>
-                            <p>02004</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>베르트랑 공준</h2>
-                            <p>04948</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>골드바흐의 추측</h2>
-                            <p>06588</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>두 박스</h2>
-                            <p>15973</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>수 이어 쓰기 2</h2>
-                            <p>01790</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>Fly me to the Alpha Centauri</h2>
-                            <p>01011</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>상근날드</h2>
-                            <p>05543</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>세 수</h2>
-                            <p>10817</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>싸이클</h2>
-                            <p>02526</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>숫자의 개수</h2>
-                            <p>02577</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>부녀회장이 될테야</h2>
-                            <p>02775</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>나머지</h2>
-                            <p>03052</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>방 배정</h2>
-                            <p>13304</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>2007년</h2>
-                            <p>01924</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>평균은 넘겠지</h2>
-                            <p>04344</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>소트인사이드</h2>
-                            <p>01427</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>방 번호</h2>
-                            <p>01475</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>달팽이</h2>
-                            <p>01913</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 23</h2>
-                            <p>13015</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>NBA 농구</h2>
-                            <p>02852</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>스택</h2>
-                            <p>10828</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>큐</h2>
-                            <p>10845</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>예산</h2>
-                            <p>02512</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>소수 구하기</h2>
-                            <p>01929</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>한 줄로 서기</h2>
-                            <p>01138</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>보이는 점의 개수</h2>
-                            <p>02725</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 22</h2>
-                            <p>10997</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>종이의 개수</h2>
-                            <p>01780</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>하노이 탑 이동 순서</h2>
-                            <p>11729</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>Z</h2>
-                            <p>01074</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 10</h2>
-                            <p>02447</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>격자상의 경로</h2>
-                            <p>10164</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>곱셈</h2>
-                            <p>01629</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>배열 돌리기 1</h2>
-                            <p>16926</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>상어 초등학교</h2>
-                            <p>21608</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>선 긋기</h2>
-                            <p>02170</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>사분면</h2>
-                            <p>01891</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>소용돌이 예쁘게 출력하기</h2>
-                            <p>01022</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>부분합</h2>
-                            <p>01806</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 11</h2>
-                            <p>02448</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>별 찍기 - 18</h2>
-                            <p>10993</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>버블 소트</h2>
-                            <p>01377</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>반복수열</h2>
-                            <p>02331</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>늑대와 양</h2>
-                            <p>16956</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>대회 or 인턴</h2>
-                            <p>02875</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>양념 반 후라이드 반</h2>
-                            <p>16917</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>차량 번호판 1</h2>
-                            <p>16968</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="etc.jpg"></div>
-                        <div class="listtext">
-                            <h2>집합</h2>
-                            <p>11723</p>
-                        </div>
-                    </a></li>
-                </ul>
+            <div class="list">
+                <a href="etc/b10430.html"><article>
+                    <div class="img">
+                        
+                    </div>
+                    <div class="content">
+                        <h1>나머지</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>팩토리얼</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>음계</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>나누기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>분수찾기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>A+B - 6</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>벌집</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>최댓값</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>오르막길</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>상수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>24</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 20</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 21</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>더하기 사이클</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>평균</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>뒤집힌 덧셈</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>달팽이는 올라가고 싶다</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>나머지와 몫이 같은 수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>반올림</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>막대기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>쉽게 푸는 문제</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>소수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>개미</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>동전 게임</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 19</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>팩토리얼 0의 개수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>수 이어 쓰기 1</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>영식이의 손가락</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>조합 0의 개수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>베르트랑 공준</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>골드바흐의 추측</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>두 박스</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>수 이어 쓰기 2</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>Fly me to the Alpha Centauri</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>상근날드</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>세 수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>싸이클</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>숫자의 개수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>부녀회장이 될테야</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>나머지</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>방 배정</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>2007년</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>평균은 넘겠지</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>소트인사이드</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>방 번호</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>달팽이</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 23</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>NBA 농구</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>스택</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>큐</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>예산</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>소수 구하기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>한 줄로 서기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>보이는 점의 개수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 22</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>종이의 개수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>하노이 탑 이동 순서</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>Z</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 10</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>격자상의 경로</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>곱셈</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>배열 돌리기 1</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>상어 초등학교</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>선 긋기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>사분면</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>소용돌이 예쁘게 출력하기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>부분합</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 11</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>별 찍기 - 18</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>버블 소트</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>반복수열</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>늑대와 양</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>대회 or 인턴</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>양념 반 후라이드 반</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>차량 번호판 1</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>집합</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
             </div>
         </section>
         <footer>
             <div class="base">
-                <div class="mainlogo"><h1>PeanutInput</h1></div>
+                <div class="logo"><h1>PeanutInput</h1></div>
                 <div class="content">
                     <div class="sitemap">
                         <ul>
-                            <li><a href="introduction.html">Introduction</a></li>
+                            <a href="algorithms.html"><li>Algorithms</li></a>
+                            <a href="dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="graph.html"><li>Graph</li></a>
+                            <a href="binary.html"><li>BinarySearch</li></a>
+                            <a href="bruteforce.html"><li>BruteForce</li></a>
+                            <a href="greedy.html"><li>Greedy</li></a>
+                            <a href="ccw.html"><li>CCW</li></a>
+                            <a href="etc.html"><li>Etc.</li></a>
                         </ul>
                         <ul>
-                            <li><a href="algorithms.html">Algorithms</a></li>
-                            <li><a href="dynamic.html">DynamicProgramming</a></li>
-                            <li><a href="graph.html">Graph</a></li>
-                            <li><a href="binary.html">BinarySearch</a></li>
-                            <li><a href="bruteforce.html">BruteForce</a></li>
-                            <li><a href="greedy.html">Greedy</a></li>
-                            <li><a href="ccw.html">CCW</a></li>
-                            <li><a href="etc.html">etc.</a></li>
+                            <a href="games.html"><li>Games</li></a>
+                            <a href="flappybird.html"><li>FlappyBird</li></a>
+                            <a href="angrybird.html"><li>AngryBird</li></a>
+                            <a href="galaga.html"><li>Galaga</li></a>
                         </ul>
                         <ul>
-                            <li><a href="games.html">Games</a></li>
-                            <li><a href="flappybird.html">FlappyBird</a></li>
-                            <li><a href="angrybird.html">AngryBird</a></li>
-                            <li><a href="galaga.html">Galaga</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Papers</a></li>
+                            <a href="paper.html"><li>Papers</li></a>
                         </ul>
                     </div>
                     <div class="info">

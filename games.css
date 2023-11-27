@@ -1,191 +1,50 @@
-* {
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-a {
-    color: black;
-    text-decoration: none;
-}
-ul {
-    list-style-type: none;
-}
-header {
-    width: 100%; height: 100px;
+section {
+    width: 100%;
     display: flex;
     justify-content: center;
-    background: rgb(255, 245, 255);
+    background: rgb(240, 240, 240);
 }
-header .base {
-    width: 1500px; height: 100px;
-    display: flex;
+section .base {
+    width: 1000px;
+    min-height: calc(100vh - 100px);
 }
-header .base .mainlogo {
-    width: 300px; height: 100px;
-    text-align: center;
+section .base>h1 {
+    width: 100%; height: 100px;
+    padding-left: 50px;
+    font-size: 25px;
     line-height: 100px;
 }
-header .base nav {
-    width: calc(100% - 300px); height: 100px;
-    display: flex;
-    justify-content: center;
-}
-header .base nav ul {
-    height: 30px;
-    margin-top: 60px;
+section .base .list {
+    width: 100%; height: calc(100% - 100px);
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    justify-content: space-between;
 }
-header .base nav ul li {
-    width: 150px; height: 30px;
-    margin: 0 20px;
-    text-align: center;
-    line-height: 30px;
+section .base .list a {
+    width: 35%; height: 30%;
+    margin: 20px;
+    transition-duration: 0.3s;
+    background: white;
 }
-header .base nav ul li a:hover {
-    color: lightseagreen;
+section .base .list a:hover {
+    box-shadow: 1px 1px 10px 1px gray;
 }
-header .base nav #cursor {
-    font-weight: bold;
-}
-section {
-    width: 100%; height: 85vh;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-section #btnleft {
-    width: 80px; height: 80px;
-    position: absolute; left: 50px;
-    opacity: 0.5;
-    z-index: 5;
-}
-section #btnleft:hover {
-    opacity: 1;
-}
-section #btnleft:active + ul #scroll{
-    animation-name: btnleft;
-}
-@keyframes btnleft {
-    0% {
-        left: 0px;
-    }
-    100% {
-        left: 350px;
-    }
-}
-section #btnleft img {
-    width: 80px; height: 80px;
-}
-section #btnright {
-    width: 80px; height: 80px;
-    position: absolute; right: 50px;
-    opacity: 0.5;
-    z-index: 5;
-}
-section #btnright:active {
-    opacity: 1;
-}
-section #btnright:focus + ul #scroll{
-    animation-name: btnright;
-}
-@keyframes btnright {
-    0% {
-        right: 0px;
-    }
-    100% {
-        right: 350px;
-    }
-}
-section #btnright img {
-    width: 80px; height: 80px;
-}
-section ul {
-    width: 70%; height: 85vh;
-    margin: 0 auto;
-    overflow: hidden;
-}
-section ul #scroll {
-    width: 2100px; height: 85vh;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    animation-fill-mode: both;
-    animation-duration: 0.5s;
-}
-section ul #scroll li {
-    width: 300px; height: 400px;
-    margin: auto 25px;
-    position: relative;
-    border-radius: 15px;
-    transition-duration: 0.5s;
-}
-section ul #scroll li a img {
+section .base .list a article {
     width: 100%; height: 100%;
-    border-radius: 15px;
 }
-section ul #scroll li a h2 {
-    position: absolute;
-    top: 50%; left: 20%;
-    color: white;
-    font-size: 35px;
+section .base .list a article .img {
+    width: 100%; height: calc(100% - 150px);
+    background-position: center;
+    background-size: cover;
 }
-footer {
-    width: 100%; height: 400px;
-    display: flex;
-    justify-content: center;
-    background: darkgray;
+section .base .list a article .content {
+    width: 100%; height: 150px;
+    padding-top: 20px;
 }
-footer .base {
-    width: 1500px; height: 400px;
-    display: flex;
+section .base .list a article .content h1 {
+    margin-left: 20px;
 }
-footer .base .mainlogo {
-    width: 300px; height: 400px;
-    text-align: center;
-    line-height: 400px;
-}
-footer .base .mainlogo h1 {
-    color: gray;
-}
-footer .base .content {
-    width: calc(100% - 300px); height: 400px;
-}
-footer .base .content .sitemap {
-    width: 100%; height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-footer .base .content .sitemap ul {
-    width: 200px; height: 280px;
-    margin-top: 20px;
-}
-footer .base .content .sitemap ul li {
-    width: 200px; height: 20px;
-    line-height: 20px;
-}
-footer .base .content .sitemap ul li:first-child {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-footer .base .content .sitemap ul li a {
-    font-size: 15px;
-    color: gray;
-}
-footer .base .content .sitemap ul li a:hover {
-    color: white;
-}
-footer .base .content .info {
-    width: 100%; height: 100px;
-    overflow: hidden;
-}
-footer .base .content .info p {
-    width: 100%; height: 20px;
-    overflow: hidden;
-    font-size: 15px;
+section .base .list a article .content p {
+    margin-left: 20px;
     color: gray;
 }

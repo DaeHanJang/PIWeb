@@ -2,18 +2,21 @@
 <html>
     <head>
         <title>PI Web - Dynamic</title>
-        <link rel="stylesheet" text="text/css" href="etc.css">
+        <link rel="stylesheet" text="text/css" href="header.css">
+        <link rel="stylesheet" text="text/css" href="algorithmlist.css">
+        <link rel="stylesheet" text="text/css" href="footer.css">
     </head>
     <body>
         <header>
             <div class="base">
-                <div class="mainlogo"><h1><a href="index.html">PeanutInput</a></h1></div>
+                <div class="logo">
+                    <h1><a href="index.html">PeanutInput</a></h1>
+                </div>
                 <nav>
                     <ul>
-                        <li><a href="introduction.html">Introduction</a></li>
-                        <li id="cursor"><a href="algorithms.html">Algorithms</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="paper.html">Papers</a></li>
+                        <a href="algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="games.html"><li>Games</li></a>
+                        <a href="paper.html"><li>Papers</li></a>
                     </ul>
                 </nav>
             </div>
@@ -21,186 +24,221 @@
         <section>
             <aside>
                 <ul>
-                    <a id="cursor" href="#"><li>Dynamic Programing</li></a>
-                    <a href="graph.html"><li>DFS, BFS</li></a>
+                    <a href="dynamic.html" id="cursor2"><li>Dynamic Programming</li></a>
+                    <a href="graph.html"><li>Graph</li></a>
                     <a href="binary.html"><li>Binary Search</li></a>
-                    <a href="bruteforce.html"><li>Brute Force</li></a>
+                    <a href="bruteforce.html"><li>BruteForce</li></a>
                     <a href="greedy.html"><li>Greedy</li></a>
                     <a href="ccw.html"><li>CCW</li></a>
-                    <a href="etc.html"><li>etc.</li></a>
+                    <a href="etc.html"><li>Etc.</li></a>
                 </ul>
             </aside>
-            <div id="list">
-                <ul>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>피보나치 수</h2>
-                            <p>02747</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>피보나치 수 2</h2>
-                            <p>02748</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>1로 만들기</h2>
-                            <p>01463</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>제곱수의 합</h2>
-                            <p>01699</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>이친수</h2>
-                            <p>02193</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>계단 오르기</h2>
-                            <p>02579</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>1, 2, 3 더하기</h2>
-                            <p>09095</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>파도반 수열</h2>
-                            <p>09461</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>2xn 타일링</h2>
-                            <p>11726</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>2xn 타일링 2</h2>
-                            <p>11727</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>연속합</h2>
-                            <p>01912</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>팰린드롬 파티션</h2>
-                            <p>02705</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>신나는 함수 실행</h2>
-                            <p>09184</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>스티커</h2>
-                            <p>09465</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>가장 긴 증가하는 부분 수열</h2>
-                            <p>11053</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>가장 큰 증가 부분 수열</h2>
-                            <p>11055</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>점프 점프</h2>
-                            <p>11060</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2> 가장 긴 감소하는 부분 수열</h2>
-                            <p>01172</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>RGB거리</h2>
-                            <p>01149</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="dynamic.jpg"></div>
-                        <div class="listtext">
-                            <h2>동물원</h2>
-                            <p>01309</p>
-                        </div>
-                    </a></li>
-                </ul>
+            <div class="list">
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>피보나치 수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>피보나치 수 2</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>1로 만들기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>제곱수의 합</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>이친수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>계단 오르기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>1, 2, 3 더하기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>파도반 수열</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>2xn 타일링</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>2xn 타일링 2</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>연속합</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>팰린드롬 파티션</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>신나는 함수 실행</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>스티커</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>가장 긴 증가하는 부분 수열</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>가장 큰 증가 부분 수열</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>점프 점프</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>가장 긴 감소하는 부분 수열</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>RGB거리</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>동물원</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
             </div>
         </section>
         <footer>
             <div class="base">
-                <div class="mainlogo"><h1>PeanutInput</h1></div>
+                <div class="logo"><h1>PeanutInput</h1></div>
                 <div class="content">
                     <div class="sitemap">
                         <ul>
-                            <li><a href="introduction.html">Introduction</a></li>
+                            <a href="algorithms.html"><li>Algorithms</li></a>
+                            <a href="dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="graph.html"><li>Graph</li></a>
+                            <a href="binary.html"><li>BinarySearch</li></a>
+                            <a href="bruteforce.html"><li>BruteForce</li></a>
+                            <a href="greedy.html"><li>Greedy</li></a>
+                            <a href="ccw.html"><li>CCW</li></a>
+                            <a href="etc.html"><li>Etc.</li></a>
                         </ul>
                         <ul>
-                            <li><a href="algorithms.html">Algorithms</a></li>
-                            <li><a href="dynamic.html">DynamicProgramming</a></li>
-                            <li><a href="graph.html">Graph</a></li>
-                            <li><a href="binary.html">BinarySearch</a></li>
-                            <li><a href="bruteforce.html">BruteForce</a></li>
-                            <li><a href="greedy.html">Greedy</a></li>
-                            <li><a href="ccw.html">CCW</a></li>
-                            <li><a href="etc.html">etc.</a></li>
+                            <a href="games.html"><li>Games</li></a>
+                            <a href="flappybird.html"><li>FlappyBird</li></a>
+                            <a href="angrybird.html"><li>AngryBird</li></a>
+                            <a href="galaga.html"><li>Galaga</li></a>
                         </ul>
                         <ul>
-                            <li><a href="games.html">Games</a></li>
-                            <li><a href="flappybird.html">FlappyBird</a></li>
-                            <li><a href="angrybird.html">AngryBird</a></li>
-                            <li><a href="galaga.html">Galaga</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Papers</a></li>
+                            <a href="paper.html"><li>Papers</li></a>
                         </ul>
                     </div>
                     <div class="info">

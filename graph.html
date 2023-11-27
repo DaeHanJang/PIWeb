@@ -2,18 +2,21 @@
 <html>
     <head>
         <title>PI Web - Graph</title>
-        <link rel="stylesheet" text="text/css" href="etc.css">
+        <link rel="stylesheet" text="text/css" href="header.css">
+        <link rel="stylesheet" text="text/css" href="algorithmlist.css">
+        <link rel="stylesheet" text="text/css" href="footer.css">
     </head>
     <body>
         <header>
             <div class="base">
-                <div class="mainlogo"><h1><a href="index.html">PeanutInput</a></h1></div>
+                <div class="logo">
+                    <h1><a href="index.html">PeanutInput</a></h1>
+                </div>
                 <nav>
                     <ul>
-                        <li><a href="introduction.html">Introduction</a></li>
-                        <li id="cursor"><a href="algorithms.html">Algorithms</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="paper.html">Papers</a></li>
+                        <a href="algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="games.html"><li>Games</li></a>
+                        <a href="paper.html"><li>Papers</li></a>
                     </ul>
                 </nav>
             </div>
@@ -21,179 +24,212 @@
         <section>
             <aside>
                 <ul>
-                    <a href="dynamic.html"><li>Dynamic Programing</li></a>
-                    <a id="cursor" href="#"><li>DFS, BFS</li></a>
+                    <a href="dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="graph.html" id="cursor2"><li>Graph</li></a>
                     <a href="binary.html"><li>Binary Search</li></a>
-                    <a href="bruteforce.html"><li>Brute Force</li></a>
+                    <a href="bruteforce.html"><li>BruteForce</li></a>
                     <a href="greedy.html"><li>Greedy</li></a>
                     <a href="ccw.html"><li>CCW</li></a>
-                    <a href="etc.html"><li>etc.</li></a>
+                    <a href="etc.html"><li>Etc.</li></a>
                 </ul>
             </aside>
-            <div id="list">
-                <ul>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>중량제한</h2>
-                            <p>01939</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>DFS와 BFS</h2>
-                            <p>01260</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>순열 사이클</h2>
-                            <p>10451</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>섬의 개수</h2>
-                            <p>04963</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>연결 요소의 개수</h2>
-                            <p>11724</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>트리의 무모 찾기</h2>
-                            <p>11725</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>아기 상어 2</h2>
-                            <p>17086</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>케빈 케이컨의 6단계 법칙</h2>
-                            <p>01389</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>숨바꼭질</h2>
-                            <p>01697</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>트리 순회</h2>
-                            <p>01991</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>미로 탐색</h2>
-                            <p>02178</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>물통</h2>
-                            <p>02251</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>단지번호붙이기</h2>
-                            <p>02667</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>토마토</h2>
-                            <p>07576</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>경로 찾기</h2>
-                            <p>11403</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>점프 게임</h2>
-                            <p>15558</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>뱀과 사다리 게임</h2>
-                            <p>16928</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>데스 나이트</h2>
-                            <p>16948</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="listimg"><img src="graph.png"></div>
-                        <div class="listtext">
-                            <h2>최단경로</h2>
-                            <p>01753</p>
-                        </div>
-                    </a></li>
-                </ul>
+            <div class="list">
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>중량제한</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>DFS와 BFS</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>순열 사이클</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>섬의 개수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>연결 요소의 개수</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>트리의 무모 찾기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>아기 상어 2</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>케빈 케이컨의 6단계 법칙</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>숨바꼭질</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>트리 순회</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>미로 탐색</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>물통</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>단지번호붙이기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>토마토</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>경로 찾기</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>점프 게임</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>뱀과 사다리 게임</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>데스 나이트</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
+                <a href="#"><article>
+                    <div class="img">
+
+                    </div>
+                    <div class="content">
+                        <h1>최단경로</h1>
+                        <p>content</p>
+                    </div>
+                </article></a>
             </div>
         </section>
         <footer>
             <div class="base">
-                <div class="mainlogo"><h1>PeanutInput</h1></div>
+                <div class="logo"><h1>PeanutInput</h1></div>
                 <div class="content">
                     <div class="sitemap">
                         <ul>
-                            <li><a href="introduction.html">Introduction</a></li>
+                            <a href="algorithms.html"><li>Algorithms</li></a>
+                            <a href="dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="graph.html"><li>Graph</li></a>
+                            <a href="binary.html"><li>BinarySearch</li></a>
+                            <a href="bruteforce.html"><li>BruteForce</li></a>
+                            <a href="greedy.html"><li>Greedy</li></a>
+                            <a href="ccw.html"><li>CCW</li></a>
+                            <a href="etc.html"><li>Etc.</li></a>
                         </ul>
                         <ul>
-                            <li><a href="algorithms.html">Algorithms</a></li>
-                            <li><a href="dynamic.html">DynamicProgramming</a></li>
-                            <li><a href="graph.html">Graph</a></li>
-                            <li><a href="binary.html">BinarySearch</a></li>
-                            <li><a href="bruteforce.html">BruteForce</a></li>
-                            <li><a href="greedy.html">Greedy</a></li>
-                            <li><a href="ccw.html">CCW</a></li>
-                            <li><a href="etc.html">etc.</a></li>
+                            <a href="games.html"><li>Games</li></a>
+                            <a href="flappybird.html"><li>FlappyBird</li></a>
+                            <a href="angrybird.html"><li>AngryBird</li></a>
+                            <a href="galaga.html"><li>Galaga</li></a>
                         </ul>
                         <ul>
-                            <li><a href="games.html">Games</a></li>
-                            <li><a href="flappybird.html">FlappyBird</a></li>
-                            <li><a href="angrybird.html">AngryBird</a></li>
-                            <li><a href="galaga.html">Galaga</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Papers</a></li>
+                            <a href="paper.html"><li>Papers</li></a>
                         </ul>
                     </div>
                     <div class="info">
