@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PI Web - b10430</title>
+        <title>PI Web - b02920</title>
         <link rel="stylesheet" text="text/css" href="../header.css">
         <link rel="stylesheet" text="text/css" href="../algorithm.css">
         <link rel="stylesheet" text="text/css" href="../footer.css">
@@ -34,44 +34,29 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>나머지</h1>
-                <a href="https://www.acmicpc.net/problem/10430"><h2>https://www.acmicpc.net/problem/10430</h2></a>
+                <h1>분수찾기</h1>
+                <a href="https://www.acmicpc.net/problem/1193"><h2>https://www.acmicpc.net/problem/1193</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1">C/C++</label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2">C#</label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3">Java</label>
                 <input type="radio" name="tabs" id="tab4"><label for="tab4">Python</label>
                 <input type="radio" name="tabs" id="tab5"><label for="tab5">Kotlin</label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6">JavaScript</label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/0ce59f46233b4ca4436a8d1ff5a4db90.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/823461a4b3f960b10082e1d6ea15b0c3.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/399f012854f46a3e293abda22723292e.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/25015b2821ef6e3fa459235f7ab5292e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ea2d91ed46598bd1db7e042e9f7c45fd.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/680ecc6ee270bf8b56af57a09e2a5b59.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/3c334ad88bdba3e197b0300a5dc066b4.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/0e95436466c77d1f383b9f4e9244f73e.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/cc0e874cd3851043144cc580cfcccd08.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/8738f7f181044d5e8cc4769924d4da9f.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/be8b1538c0063b0bd267fc61d76f70c0.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/eff680e847d0e0682f6b9b39c79b0672.js"></script></div>
                 <p>
-                    처음 문제를 해결할 때 아무생각없이 주어진 대로 <br>
-                    (A+B)%C, ((A%C)+(B%C))%C, (A*B)%C, ((A%C)*(B%C))%C를 계산하여 해결하였다.<br>
-                    추후 알고리즘 문제를 더 풀면서 나머지 연산의 분배법칙에 관련된 문제라는 것을 알게되었다.<br><br>
-                    
-                    (A+B)%C = ((A%C)+(B%C))%C<br>
-                    나머지 연산은 다음과 같이분배법칙이 성립하는데<br><br>
+                    분자를 i, 분모를 j로 설정하고 1열이 몇 번째 순서인지를 c로 설정했다.<br><br>
 
-                    A = a * C + r1<br>
-                    B = b * C + r2<br>
-                    A는 C로 나누었을 때 몫a와 나머지r1으로 나타낼 수 있고 <br>
-                    B도 마찬가지로 몫b와 나머지r2로 나타낼 수 있다.<br><br>
+                    첫번째 반복문으로 1씩 커져가는 i를 더하면서 입력값보다 작은 c를 구한다.<br>
+                    이때 i가 짝수인지 홀수인지를 구하는데 <br>
+                    지그재그 순서로 분수를 구하기 때문에 홀수일 경우에는 i가 분모가되고 j가 분자가되기 때문이다.<br>
+                    i와 j가 바뀔 수 있는 이유는 서로 1과 기준값 i의 기준으로 1씩 작아지고 커기지 때문이다.<br><br>
 
-                    (A+B)%C에 치환하면<br>
-                    (a*C + r1 + b*C + r2)%C가 되고<br>
-                    a*C와 b*C는 A를 C로 나누엇을 대 몫임으로 %C연산을 하면 0이된다.<br><br>
-                    
-                    따라서 (A+B)%C = (r1 + r2)%C이고<br>
-                    r1는 A/C의 나머지임으로 r1 = A%C<br>
-                    r2도 마찬가지로 r2 = B%C가 됨으로 <br>
-                    (A+B)%C = ((A%C)+(B%C))%C가 성립하는 것을 알 수 있다.<br><br>
-
-                    더하기뿐만 아니라 빼기, 곱셈도 성립된다.<br>
-                    단, 나누기는 성립하지 않는다.<br>
+                    두번째 반복문에서 c를 기준으로 입력값이 될 때까지 i를 1씩 빼고 j를 1씩 더하며 답을 구한다.<br>
                 </p>
             </div>
         </section>
