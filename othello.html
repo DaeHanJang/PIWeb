@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Othello</title>
-    <link rel="shortcut icon" href="TemplateDataOthello/favicon.ico">
-    <link rel="stylesheet" href="TemplateDataOthello/style.css">
     <link rel="stylesheet" text="text/css" href="header.css">
     <link rel="stylesheet" text="text/css" href="footer.css">
+    <link rel="shortcut icon" href="TemplateDataOthello/favicon.ico">
+    <link rel="stylesheet" href="TemplateDataOthello/style.css">
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
           <nav>
               <ul>
                   <a href="algorithms.html"><li>Algorithms</li></a>
-                  <a href="games.html" id="cursor"><li>Games</li></a>
+                  <a href="games.html"><li>Games</li></a>
                   <a href="paper.html"><li>Papers</li></a>
               </ul>
           </nav>
@@ -27,7 +27,7 @@
     <section>
       <aside>
         <ul>
-            <a href="flappybird.html" id="cursor2"><li>Flappy Bird</li></a>
+            <a href="flappybird.html"><li>Flappy Bird</li></a>
             <a href="angrybird.html"><li>Angry Bird</li></a>
             <a href="galaga.html"><li>Galaga</li></a>
             <a href="omok.html"><li>Omok</li></a>
@@ -45,7 +45,6 @@
         <div id="unity-warning"> </div>
         <div id="unity-footer">
           <div id="unity-webgl-logo"></div>
-          <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">Othello</div>
         </div>
       </div>
@@ -118,11 +117,11 @@
       }
 
       var buildUrl = "BuildOthello";
-      var loaderUrl = buildUrl + "/새 폴더.loader.js";
+      var loaderUrl = buildUrl + "/OthelloWebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/새 폴더.data.unityweb",
-        frameworkUrl: buildUrl + "/새 폴더.framework.js.unityweb",
-        codeUrl: buildUrl + "/새 폴더.wasm.unityweb",
+        dataUrl: buildUrl + "/OthelloWebGL.data.br",
+        frameworkUrl: buildUrl + "/OthelloWebGL.framework.js.br",
+        codeUrl: buildUrl + "/OthelloWebGL.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Othello",

@@ -22,7 +22,6 @@ section .base .list {
 }
 section .base .list a {
     width: 35%; height: 30%;
-    margin: 20px;
     transition-duration: 0.3s;
     background: white;
 }

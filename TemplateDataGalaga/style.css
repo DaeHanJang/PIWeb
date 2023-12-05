@@ -34,8 +34,6 @@ section aside ul #cursor2 {
     font-weight: bold;
     background: rgb(255, 210, 255);
 }
-section #unity-container { position: absolute }
-section #unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
 section #unity-container.unity-mobile { width: 100%; height: 100% }
 section #unity-canvas { background: #1F1F20 }
 section .unity-mobile #unity-canvas { width: 100%; height: 100% }
