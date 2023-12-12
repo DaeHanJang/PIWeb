@@ -58,7 +58,7 @@ section aside ul #cursor2 {
 .unity-desktop #unity-loading-bar {
     display: none;
     position: absolute;
-    left: 50%; top: 235px;
+    left: 50%; top: 410px;
     transform: translate(-50%, -50%);
 }
 .unity-mobile #unity-loading-bar {
