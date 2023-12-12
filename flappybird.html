@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | FlappyBird</title>
-    <link rel="shortcut icon" href="TemplateDataFlappyBird/favicon.ico">
-    <link rel="stylesheet" href="TemplateDataFlappyBird/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Web - FlappyBird</title>
     <link rel="stylesheet" text="text/css" href="header.css">
     <link rel="stylesheet" text="text/css" href="footer.css">
+    <link rel="shortcut icon" href="FlappyBird/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="FlappyBird/TemplateData/style.css">
   </head>
   <body>
     <header style="min-width: 1050px">
@@ -18,7 +19,7 @@
           <nav>
               <ul>
                   <a href="algorithms.html"><li>Algorithms</li></a>
-                  <a href="games.html" id="cursor"><li>Games</li></a>
+                  <a href="games.html"><li>Games</li></a>
                   <a href="paper.html"><li>Papers</li></a>
               </ul>
           </nav>
@@ -45,11 +46,12 @@
         <div id="unity-warning"> </div>
         <div id="unity-footer">
           <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">FlappyBird</div>
         </div>
       </div>
     </section>
-    <footer style="min-width: 1050px">
+    <footer>
       <div class="base">
           <div class="logo"><h1>PeanutInput</h1></div>
           <div class="content">
@@ -83,7 +85,7 @@
               </div>
           </div>
       </div>
-    </footer>
+    </footer style="min-width: 1050px">
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -116,12 +118,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "BuildFlappyBird";
-      var loaderUrl = buildUrl + "/PI Web.loader.js";
+      var buildUrl = "FlappyBird/Build";
+      var loaderUrl = buildUrl + "/FlappyBird.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PI Web.data.unityweb",
-        frameworkUrl: buildUrl + "/PI Web.framework.js.unityweb",
-        codeUrl: buildUrl + "/PI Web.wasm.unityweb",
+        dataUrl: buildUrl + "/FlappyBird.data.unityweb",
+        frameworkUrl: buildUrl + "/FlappyBird.framework.js.unityweb",
+        codeUrl: buildUrl + "/FlappyBird.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "FlappyBird",
