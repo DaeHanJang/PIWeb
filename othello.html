@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Othello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Web - Othello</title>
     <link rel="stylesheet" text="text/css" href="header.css">
     <link rel="stylesheet" text="text/css" href="footer.css">
-    <link rel="shortcut icon" href="TemplateDataOthello/favicon.ico">
-    <link rel="stylesheet" href="TemplateDataOthello/style.css">
+    <link rel="shortcut icon" href="Othello/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="Othello/TemplateData/style.css">
   </head>
   <body>
-    <header>
+    <header style="min-width: 1050px">
       <div class="base">
           <div class="logo">
               <h1><a href="index.html">PeanutInput</a></h1>
@@ -45,11 +46,12 @@
         <div id="unity-warning"> </div>
         <div id="unity-footer">
           <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">Othello</div>
         </div>
       </div>
     </section>
-    <footer>
+    <footer style="min-width: 1050px">
       <div class="base">
           <div class="logo"><h1>PeanutInput</h1></div>
           <div class="content">
@@ -116,12 +118,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "BuildOthello";
-      var loaderUrl = buildUrl + "/OthelloWebGL.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Othello.loader.js";
       var config = {
-        dataUrl: buildUrl + "/OthelloWebGL.data.br",
-        frameworkUrl: buildUrl + "/OthelloWebGL.framework.js.br",
-        codeUrl: buildUrl + "/OthelloWebGL.wasm.br",
+        dataUrl: buildUrl + "/Othello.data.unityweb",
+        frameworkUrl: buildUrl + "/Othello.framework.js.unityweb",
+        codeUrl: buildUrl + "/Othello.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Othello",

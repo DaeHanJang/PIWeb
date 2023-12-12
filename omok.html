@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Omok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Web - Omok</title>
     <link rel="stylesheet" text="text/css" href="header.css">
     <link rel="stylesheet" text="text/css" href="footer.css">
-    <link rel="shortcut icon" href="TemplateDataOmok/favicon.ico">
-    <link rel="stylesheet" href="TemplateDataOmok/style.css">
+    <link rel="shortcut icon" href="Omok/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="Omok/TemplateData/style.css">
   </head>
   <body>
-    <header>
+    <header style="min-width: 1050px">
       <div class="base">
           <div class="logo">
               <h1><a href="index.html">PeanutInput</a></h1>
@@ -45,11 +46,12 @@
         <div id="unity-warning"> </div>
         <div id="unity-footer">
           <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">Omok</div>
         </div>
       </div>
     </section>
-    <footer>
+    <footer style="min-width: 1050px">
       <div class="base">
           <div class="logo"><h1>PeanutInput</h1></div>
           <div class="content">
@@ -116,12 +118,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "BuildOmok";
-      var loaderUrl = buildUrl + "/OmokWebGL.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Omok.loader.js";
       var config = {
-        dataUrl: buildUrl + "/OmokWebGL.data.br",
-        frameworkUrl: buildUrl + "/OmokWebGL.framework.js.br",
-        codeUrl: buildUrl + "/OmokWebGL.wasm.br",
+        dataUrl: buildUrl + "/Omok.data.unityweb",
+        frameworkUrl: buildUrl + "/Omok.framework.js.unityweb",
+        codeUrl: buildUrl + "/Omok.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Omok",

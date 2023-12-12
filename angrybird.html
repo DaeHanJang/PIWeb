@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | AngryBird</title>
-    <link rel="shortcut icon" href="TemplateDataAngryBird/favicon.ico">
-    <link rel="stylesheet" href="TemplateDataAngryBird/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Web - AngryBird</title>
     <link rel="stylesheet" text="text/css" href="header.css">
     <link rel="stylesheet" text="text/css" href="footer.css">
+    <link rel="shortcut icon" href="AngryBird/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="AngryBird/TemplateData/style.css">
   </head>
   <body>
     <header style="min-width: 1050px">
@@ -18,7 +19,7 @@
           <nav>
               <ul>
                   <a href="algorithms.html"><li>Algorithms</li></a>
-                  <a href="games.html" id="cursor"><li>Games</li></a>
+                  <a href="games.html"><li>Games</li></a>
                   <a href="paper.html"><li>Papers</li></a>
               </ul>
           </nav>
@@ -45,6 +46,7 @@
         <div id="unity-warning"> </div>
         <div id="unity-footer">
           <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">AngryBird</div>
         </div>
       </div>
@@ -116,12 +118,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "BuildAngryBird";
-      var loaderUrl = buildUrl + "/PI Web.loader.js";
+      var buildUrl = "AngryBird/Build";
+      var loaderUrl = buildUrl + "/AngryBird.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PI Web.data.unityweb",
-        frameworkUrl: buildUrl + "/PI Web.framework.js.unityweb",
-        codeUrl: buildUrl + "/PI Web.wasm.unityweb",
+        dataUrl: buildUrl + "/AngryBird.data.unityweb",
+        frameworkUrl: buildUrl + "/AngryBird.framework.js.unityweb",
+        codeUrl: buildUrl + "/AngryBird.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "AngryBird",
