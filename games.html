@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <title>PI Web - Games</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PI Web - Test</title>
         <link rel="stylesheet" text="text/css" href="header.css">
-        <link rel="stylesheet" text="text/css" href="games.css">
+        <link rel="stylesheet" text="text/css" href="test.css">
         <link rel="stylesheet" text="text/css" href="footer.css">
     </head>
     <body>
@@ -23,43 +25,86 @@
         </header>
         <section>
             <div class="base">
-                <h1>Games</h1>
+                <div class="main">
+                    <input type="radio" name="tabs" id="tab1" checked>
+                    <input type="radio" name="tabs" id="tab2">
+                    <input type="radio" name="tabs" id="tab3">
+                    <input type="radio" name="tabs" id="tab4">
+                    <input type="radio" name="tabs" id="tab5">
+                    <div id="content1">
+                        <video src="flappybird.mp4" muted autoplay loop poster="flappybird.png"></video>
+                        <h1>FlappyBird</h1>
+                        <p>2D 횡스크롤</p>
+                        <a href="flappybird.html"><div>Play</div></a>
+                    </div>
+                    <div id="content2">
+                        <video src="angrybird.mp4" muted autoplay loop poster="angrybird.png"></video>
+                        <h1>AngryBird</h1>
+                        <p>2D 횡스크롤</p>
+                        <a href="angrybird.html"><div>Play</div></a>
+                    </div>
+                    <div id="content3" style="background-size: contain; background-color: black;">
+                        <video src="galaga.mp4" muted autoplay loop poster="galaga.png"></video>
+                        <h1>Galaga</h1>
+                        <p>2D 슈팅</p>
+                        <a href="galaga.html"><div>Play</div></a>
+                    </div>
+                    <div id="content4">
+                        <video src="omok.mp4" muted autoplay loop poster="omok.png"></video>
+                        <h1>Omok</h1>
+                        <p>2D 보드</p>
+                        <a href="omok.html"><div>Play</div></a>
+                    </div>
+                    <div id="content5">
+                        <video src="othello.mp4" muted autoplay loop poster="othello.png"></video>
+                        <h1>Othello</h1>
+                        <p>2D 보드</p>
+                        <a href="othello.html"><div>Play</div></a>
+                    </div>
+                    <label for="tab1">FlappyBird</label>
+                    <label for="tab2">AngryBird</label>
+                    <label for="tab3">Galaga</label>
+                    <label for="tab4">Omok</label>
+                    <label for="tab5">Othello</label>
+                </div>
                 <div class="list">
-                    <a href="flappybird.html"><article>
-                        <div class="img" style="background-image: url(flappybird.png);"></div>
-                        <div class="content">
-                            <h1>Flappy Bird</h1>
-                            <p>2D 횡스크롤</p>
-                        </div>
-                    </article></a>
-                    <a href="angrybird.html"><article>
-                        <div class="img" style="background-image: url(angrybird.png);"></div>
-                        <div class="content">
-                            <h1>Angry Bird</h1>
-                            <p>2D 횡스크롤</p>
-                        </div>
-                    </article></a>
-                    <a href="galaga.html"><article>
-                        <div class="img" style="background-image: url(galaga.png); background-size:cover; background-position: center top;"></div>
-                        <div class="content">
-                            <h1>Galaga</h1>
-                            <p>2D 슈팅</p>
-                        </div>
-                    </article></a>
-                    <a href="omok.html"><article>
-                        <div class="img" style="background-image: url(omok.png); background-size:cover; background-position: center top;"></div>
-                        <div class="content">
-                            <h1>Omok</h1>
-                            <p>2D 보드</p>
-                        </div>
-                    </article></a>
-                    <a href="othello.html"><article>
-                        <div class="img" style="background-image: url(othello.png); background-size:cover; background-position: center top;"></div>
-                        <div class="content">
-                            <h1>Othello</h1>
-                            <p>2D 보드</p>
-                        </div>
-                    </article></a>
+                    <ul>
+                        <a href="flappybird.html"><li>
+                            <div class="img" style="background-image: url(flappybird.png);"></div>
+                            <div class="content">
+                                <h1>FlappyBird</h1>
+                                <p>2D 횡스크롤</p>
+                            </div>
+                        </li></a>
+                        <a href="angrybird.html"><li>
+                            <div class="img" style="background-image: url(angrybird.png);"></div>
+                            <div class="content">
+                                <h1>AngryBird</h1>
+                                <p>2D 횡스크롤</p>
+                            </div>
+                        </li></a>
+                        <a href="galaga.html"><li>
+                            <div class="img" style="background-image: url(galaga.png); background-size: contain; background-color: black;"></div>
+                            <div class="content">
+                                <h1>Galaga</h1>
+                                <p>2D 슈팅</p>
+                            </div>
+                        </li></a>
+                        <a href="omok.html"><li>
+                            <div class="img" style="background-image: url(omok.png);"></div>
+                            <div class="content">
+                                <h1>Omok</h1>
+                                <p>2D 보드</p>
+                            </div>
+                        </li></a>
+                        <a href="othello.html"><li>
+                            <div class="img" style="background-image: url(othello.png);"></div>
+                            <div class="content">
+                                <h1>Othello</h1>
+                                <p>2D 보드</p>
+                            </div>
+                        </li></a>
+                    </ul>
                 </div>
             </div>
         </section>

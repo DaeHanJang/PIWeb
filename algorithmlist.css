@@ -1,13 +1,12 @@
 section {
-    width: 100%; min-height: calc(100vh - 100px);
+    width: 100%; 
+    min-width: 1250px; min-height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     background: rgb(245, 245, 245);
 }
 section aside {
     width: 250px;
-    position: fixed;
-    top: 120px; left: 20px;
     background: rgb(255, 230, 255);
 }
 section aside ul {
@@ -18,9 +17,6 @@ section aside ul a {
     display: flex;
     justify-content: center;
     line-height: 50px;
-}
-section aside ul a:last-child li{
-    border: none;
 }
 section aside ul a:hover {
     font-weight: bold;
