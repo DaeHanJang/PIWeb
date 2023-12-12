@@ -28,10 +28,8 @@ section .base .main div[id*=content] {
     background-position: center;
     overflow: hidden;
 }
-section .base .main div[id*=content] video {
-    height: 100%;
-    position: absolute;
-    top: 0px; left: 0px;
+section .base .main div[id*=content] iframe {
+    width: 100%; height: 100%;
 }
 section .base .main div[id*=content] h1 {
     position: absolute;
