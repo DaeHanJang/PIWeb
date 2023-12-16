@@ -3,94 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PI Web - FlappyBird</title>
-    <link rel="stylesheet" text="text/css" href="../CSS/header.css">
-    <link rel="stylesheet" text="text/css" href="../CSS/footer.css">
-    <link rel="shortcut icon" href="FlappyBird/TemplateDataFlappyBird/favicon.ico">
-    <link rel="stylesheet" href="FlappyBird/TemplateDataFlappyBird/style.css">
+    <title>Unity WebGL Player | FlappyBird</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <header style="min-width: 1050px">
-      <div class="base">
-          <div class="logo">
-              <h1><a href="../index.html">PeanutInput</a></h1>
-          </div>
-          <nav>
-              <ul>
-                  <a href="../algorithms.html"><li>Algorithms</li></a>
-                  <a href="../games.html"><li>Games</li></a>
-                  <a href="../paper.html"><li>Papers</li></a>
-              </ul>
-          </nav>
-      </div>
-    </header>
-    <section>
-      <aside>
-        <ul>
-            <a href="flappybird.html" id="cursor2"><li>Flappy Bird</li></a>
-            <a href="angrybird.html"><li>Angry Bird</li></a>
-            <a href="galaga.html"><li>Galaga</li></a>
-            <a href="omok.html"><li>Omok</li></a>
-            <a href="othello.html"><li>Othello</li></a>
-        </ul>
-      </aside>
-      <div id="unity-container" class="unity-desktop">
-        <canvas id="unity-canvas" width=800 height=450></canvas>
-        <div id="unity-loading-bar">
-          <div id="unity-logo"></div>
-          <div id="unity-progress-bar-empty">
-            <div id="unity-progress-bar-full"></div>
-          </div>
-        </div>
-        <div id="unity-warning"> </div>
-        <div id="unity-footer">
-          <div id="unity-webgl-logo"></div>
-          <div id="unity-fullscreen-button"></div>
-          <div id="unity-build-title">FlappyBird</div>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=800 height=450></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="base">
-          <div class="logo"><h1>PeanutInput</h1></div>
-          <div class="content">
-              <div class="sitemap">
-                  <ul>
-                      <a href="../algorithms.html"><li>Algorithms</li></a>
-                      <a href="../Algorithms/dynamic.html"><li>DynamicProgramming</li></a>
-                      <a href="../Algorithms/graph.html"><li>Graph</li></a>
-                      <a href="../Algorithms/binary.html"><li>BinarySearch</li></a>
-                      <a href="../Algorithms/bruteforce.html"><li>BruteForce</li></a>
-                      <a href="../Algorithms/greedy.html"><li>Greedy</li></a>
-                      <a href="../Algorithms/ccw.html"><li>CCW</li></a>
-                      <a href="../Algorithms/etc.html"><li>Etc.</li></a>
-                  </ul>
-                  <ul>
-                      <a href="../games.html"><li>Games</li></a>
-                      <a href="flappybird.html"><li>FlappyBird</li></a>
-                      <a href="angrybird.html"><li>AngryBird</li></a>
-                      <a href="galaga.html"><li>Galaga</li></a>
-                      <a href="omok.html"><li>Omok</li></a>
-                      <a href="othello.html"><li>Othello</li></a>
-                  </ul>
-                  <ul>
-                      <a href="../paper.html"><li>Papers</li></a>
-                  </ul>
-              </div>
-              <div class="info">
-                  <p>장대한 DaeHang Jang</p>
-                  <p>phone : 010-2521-9719</p>
-                  <p>e-mail : lchdh0906@gmail.com</p>
-              </div>
-          </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">FlappyBird</div>
       </div>
-    </footer style="min-width: 1050px">
+    </div>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
-      //var loadingBar = document.querySelector("#unity-loading-bar");
-      //var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
@@ -118,7 +55,7 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "FlappyBird/BuildFlappyBird";
+      var buildUrl = "Build";
       var loaderUrl = buildUrl + "/FlappyBird.loader.js";
       var config = {
         dataUrl: buildUrl + "/FlappyBird.data.unityweb",
@@ -162,15 +99,15 @@
         canvas.style.height = "450px";
       }
 
-      //loadingBar.style.display = "block";
+      loadingBar.style.display = "block";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
-          //progressBarFull.style.width = 100 * progress + "%";
+          progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-          //loadingBar.style.display = "none";
+          loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
