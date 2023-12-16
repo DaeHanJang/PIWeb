@@ -1,0 +1,90 @@
+section {
+    width: 100%;
+    min-width: 1260px; min-height: calc(100vh - 100px);
+    display:flex;
+    justify-content: center;
+}
+section aside {
+    width: 250px;
+    margin-right: 10px;
+    background: rgb(255, 230, 255);
+}
+section aside ul {
+    width: 250px;
+}
+section aside ul a {
+    width: 250px; height: 50px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+section aside ul a:hover {
+    font-weight: bold;
+    background: rgb(255, 210, 255);
+}
+section aside ul a li {
+    width: 210px; height: 50px;
+    border-bottom: 1px solid gray;
+}
+section aside ul #cursor2 {
+    font-weight: bold;
+    background: rgb(255, 210, 255);
+}
+section .base {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+section .base h1 {
+    width: 1000px; height: 50px;
+    margin: 20px 0;
+    font-size: 35px;
+}
+section .base h2 {
+    width: 1000px; height: 25px;
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+section .base input {
+    display: none;
+}
+section .base input:checked+label {
+    color: red;
+    text-decoration: underline;
+}
+section .base label {
+    width: 100px; height: 30px;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+section .base div[id*=content] {
+    width: 100%;
+    display: none;
+}
+section .base #tab1:checked~#content1 {
+    display: block;
+}
+section .base #tab2:checked~#content2 {
+    display: block;
+}
+section .base #tab3:checked~#content3 {
+    display: block;
+}
+section .base #tab4:checked~#content4 {
+    display: block;
+}
+section .base #tab5:checked~#content5 {
+    display: block;
+}
+section .base #tab6:checked~#content6 {
+    display: block;
+}
+section .base p {
+    width: 1000px;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
