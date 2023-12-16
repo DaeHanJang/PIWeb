@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PI Web - Galaga</title>
+    <title>PI Web - Galage</title>
     <link rel="stylesheet" text="text/css" href="../CSS/header.css">
     <link rel="stylesheet" text="text/css" href="../CSS/footer.css">
-    <link rel="shortcut icon" href="Galaga/TemplateDataGalaga/favicon.ico">
-    <link rel="stylesheet" href="Galaga/TemplateDataGalaga/style.css">
+    <link rel="shortcut icon" href="Galaga/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="Galaga/TemplateData/style.css">
   </head>
   <body>
-    <header style="min-width: 1050px">
+    <header>
       <div class="base">
           <div class="logo">
               <h1><a href="index.html">PeanutInput</a></h1>
@@ -29,8 +29,8 @@
       <aside>
         <ul>
             <a href="flappybird.html"><li>FlappyBird</li></a>
-            <a href="angrybird.html"><li>AngryBird</li></a>
-            <a href="galaga.html" id="cursor2"><li>Galaga</li></a>
+            <a href="angrybird.html" id="cursor2"><li>AngryBird</li></a>
+            <a href="galaga.html"><li>Galaga</li></a>
             <a href="omok.html"><li>Omok</li></a>
             <a href="othello.html"><li>Othello</li></a>
         </ul>
@@ -47,50 +47,51 @@
         <div id="unity-footer">
           <div id="unity-webgl-logo"></div>
           <div id="unity-fullscreen-button"></div>
-          <div id="unity-build-title">Galaga</div>
+          <div id="unity-build-title">Galage</div>
         </div>
       </div>
     </section>
-    <footer style="min-width: 1050px">
+    <footer>
       <div class="base">
-          <div class="logo"><h1>PeanutInput</h1></div>
-          <div class="content">
-              <div class="sitemap">
-                  <ul>
-                      <a href="algorithms.html"><li>Algorithms</li></a>
-                      <a href="dynamic.html"><li>DynamicProgramming</li></a>
-                      <a href="graph.html"><li>Graph</li></a>
-                      <a href="binary.html"><li>BinarySearch</li></a>
-                      <a href="bruteforce.html"><li>BruteForce</li></a>
-                      <a href="greedy.html"><li>Greedy</li></a>
-                      <a href="ccw.html"><li>CCW</li></a>
-                      <a href="etc.html"><li>Etc.</li></a>
-                  </ul>
-                  <ul>
-                      <a href="games.html"><li>Games</li></a>
-                      <a href="flappybird.html"><li>FlappyBird</li></a>
-                      <a href="angrybird.html"><li>AngryBird</li></a>
-                      <a href="galaga.html"><li>Galaga</li></a>
-                      <a href="omok.html"><li>Omok</li></a>
-                      <a href="othello.html"><li>Othello</li></a>
-                  </ul>
-                  <ul>
-                      <a href="paper.html"><li>Papers</li></a>
-                  </ul>
-              </div>
-              <div class="info">
-                  <p>장대한 DaeHang Jang</p>
-                  <p>phone : 010-2521-9719</p>
-                  <p>e-mail : lchdh0906@gmail.com</p>
-              </div>
-          </div>
-      </div>
+        <div class="logo"><h1>PeanutInput</h1></div>
+        <div class="content">
+            <div class="sitemap">
+                <ul>
+                    <a href="../algorithms.html"><li>Algorithms</li></a>
+                    <a href="../Algorithms/dynamic.html"><li>DynamicProgramming</li></a>
+                    <a href="../Algorithms/graph.html"><li>Graph</li></a>
+                    <a href="../Algorithms/binary.html"><li>BinarySearch</li></a>
+                    <a href="../Algorithms/bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../Algorithms/greedy.html"><li>Greedy</li></a>
+                    <a href="../Algorithms/ccw.html"><li>CCW</li></a>
+                    <a href="../Algorithms/etc.html"><li>Etc.</li></a>
+                </ul>
+                <ul>
+                    <a href="../games.html"><li>Games</li></a>
+                    <a href="flappybird.html"><li>FlappyBird</li></a>
+                    <a href="angrybird.html"><li>AngryBird</li></a>
+                    <a href="galaga.html"><li>Galaga</li></a>
+                    <a href="omok.html"><li>Omok</li></a>
+                    <a href="othello.html"><li>Othello</li></a>
+                </ul>
+                <ul>
+                    <a href="../paper.html"><li>Papers</li></a>
+                </ul>
+            </div>
+            <div class="info">
+                <p>장대한 DaeHang Jang</p>
+                <p>phone : 010-2521-9719</p>
+                <p>e-mail : lchdh0906@gmail.com</p>
+            </div>
+        </div>
+    </div>
     </footer>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -117,15 +118,15 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Galaga/BuildGalaga";
-      var loaderUrl = buildUrl + "/WebGL.loader.js";
+      var buildUrl = "Galaga/Build";
+      var loaderUrl = buildUrl + "/Galaga.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/Galaga.data.unityweb",
+        frameworkUrl: buildUrl + "/Galaga.framework.js.unityweb",
+        codeUrl: buildUrl + "/Galaga.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "New Unity Project",
+        productName: "Galage",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
