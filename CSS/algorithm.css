@@ -83,6 +83,9 @@ section .base #tab5:checked~#content5 {
 section .base #tab6:checked~#content6 {
     display: block;
 }
+section .base #tab7:checked~#content7 {
+    display: block;
+}
 section .base p {
     width: 1000px;
     margin-bottom: 40px;

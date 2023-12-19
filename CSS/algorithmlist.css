@@ -54,6 +54,9 @@ section .list a article .img {
     width: 260px; height: 200px;
     margin: 0 20px;
     background: darkgray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 section .list a article .content {
     width: 560px; height: 200px;
