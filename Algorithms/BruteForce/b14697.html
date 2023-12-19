@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b10430</title>
+        <title>PI Web - b14697</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
     </head>
     <body>
-        <header>
+        <header style="min-width: 1260px;">
             <div class="base">
                 <div class="logo">
                     <h1><a href="../../index.html">PeanutInput</a></h1>
@@ -29,15 +29,15 @@
                     <a href="../dynamic.html"><li>Dynamic Programming</li></a>
                     <a href="../graph.html"><li>Graph</li></a>
                     <a href="../binary.html"><li>Binary Search</li></a>
-                    <a href="../bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../bruteforce.html" id="cursor2"><li>BruteForce</li></a>
                     <a href="../greedy.html"><li>Greedy</li></a>
                     <a href="../ccw.html"><li>CCW</li></a>
-                    <a href="../etc.html" id="cursor2"><li>Etc.</li></a>
+                    <a href="../etc.html"><li>Etc.</li></a>
                 </ul>
             </aside>
             <div class="base">
-                <h1>나머지</h1>
-                <a href="https://www.acmicpc.net/problem/10430"><h2>https://www.acmicpc.net/problem/10430</h2></a>
+                <h1>방 배정하기</h1>
+                <a href="https://www.acmicpc.net/problem/14697"><h2>https://www.acmicpc.net/problem/14697</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1">C/C++</label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2">C#</label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3">Java</label>
@@ -45,41 +45,23 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5">Kotlin</label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6">JavaScript</label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7">Dart</label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/0ce59f46233b4ca4436a8d1ff5a4db90.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/823461a4b3f960b10082e1d6ea15b0c3.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/399f012854f46a3e293abda22723292e.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/25015b2821ef6e3fa459235f7ab5292e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ea2d91ed46598bd1db7e042e9f7c45fd.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/680ecc6ee270bf8b56af57a09e2a5b59.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/dac61a7c64b7375454a98a9f3245caf8.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/42d2d56a72c95a8dc95c194645977c2f.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/26621163c6872a51b3549fca7e844fa9.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/7cd4b501d51661a0ce968760693f75a0.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/4348bd3e94cbb89402620bf949a3945b.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/d50e429b3d83639b439adc7fec38e1fc.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/a8613c172df967d408f45f4e6b2cc11b.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/98169f3a8114ef9caafec13654b1664e.js"></script></div>
                 <p>
-                    처음 문제를 해결할 때 아무생각없이 주어진 대로 <br>
-                    (A+B)%C, ((A%C)+(B%C))%C, (A*B)%C, ((A%C)*(B%C))%C를 계산하여 해결하였다.<br>
-                    추후 알고리즘 문제를 더 풀면서 나머지 연산의 분배법칙에 관련된 문제라는 것을 알게되었다.<br><br>
-                    
-                    (A+B)%C = ((A%C)+(B%C))%C<br>
-                    나머지 연산은 다음과 같이분배법칙이 성립하는데<br><br>
+                    문제 조건에서 입력값인 A,B,C는 A<=B<=C라는 조건을 갖고있으며<br>
+                    학생수는 300이하로 제한되어 있다.<br><br>
 
-                    A = a * C + r1<br>
-                    B = b * C + r2<br>
-                    A는 C로 나누었을 때 몫a와 나머지r1으로 나타낼 수 있고 <br>
-                    B도 마찬가지로 몫b와 나머지r2로 나타낼 수 있다.<br><br>
-
-                    (A+B)%C에 치환하면<br>
-                    (a*C + r1 + b*C + r2)%C가 되고<br>
-                    a*C와 b*C는 A를 C로 나누엇을 대 몫임으로 %C연산을 하면 0이된다.<br><br>
-                    
-                    따라서 (A+B)%C = (r1 + r2)%C이고<br>
-                    r1는 A/C의 나머지임으로 r1 = A%C<br>
-                    r2도 마찬가지로 r2 = B%C가 됨으로 <br>
-                    (A+B)%C = ((A%C)+(B%C))%C가 성립하는 것을 알 수 있다.<br><br>
-
-                    더하기뿐만 아니라 빼기, 곱셈도 성립된다.<br>
-                    단, 나누기는 성립하지 않는다.<br>
+                    따라서 A,B,C 1이어도 삼중반복문을 돌리기에 속도에 문제가 없음으로 <br>
+                    반복문을 돌려 값을 찾도록 한다.<br>
                 </p>
             </div>
         </section>
-        <footer>
+        <footer style="min-width: 1260px;">
             <div class="base">
                 <div class="logo"><h1>PeanutInput</h1></div>
                 <div class="content">

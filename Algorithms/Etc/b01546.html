@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b10430</title>
+        <title>PI Web - b01546</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>나머지</h1>
-                <a href="https://www.acmicpc.net/problem/10430"><h2>https://www.acmicpc.net/problem/10430</h2></a>
+                <h1>평균</h1>
+                <a href="https://www.acmicpc.net/problem/1546"><h2>https://www.acmicpc.net/problem/1546</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1">C/C++</label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2">C#</label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3">Java</label>
@@ -45,37 +45,19 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5">Kotlin</label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6">JavaScript</label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7">Dart</label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/0ce59f46233b4ca4436a8d1ff5a4db90.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/823461a4b3f960b10082e1d6ea15b0c3.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/399f012854f46a3e293abda22723292e.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/25015b2821ef6e3fa459235f7ab5292e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ea2d91ed46598bd1db7e042e9f7c45fd.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/680ecc6ee270bf8b56af57a09e2a5b59.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/dac61a7c64b7375454a98a9f3245caf8.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/24f8cda0ee699afdb7dd78d968c3f838.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/938fce81837e956d8d283892637769a1.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/04bccbce1ef58562468cd9c043e170d9.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/817d29ccb6e305eeb2155714c85b03b5.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/9bfcee1b3bdce9ad23b0a7b47aa30449.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/01d3927e18237218291400b0f0d3ef0e.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/78d78df49775753c0053c7c2e9dbb3ee.js"></script></div>
                 <p>
-                    처음 문제를 해결할 때 아무생각없이 주어진 대로 <br>
-                    (A+B)%C, ((A%C)+(B%C))%C, (A*B)%C, ((A%C)*(B%C))%C를 계산하여 해결하였다.<br>
-                    추후 알고리즘 문제를 더 풀면서 나머지 연산의 분배법칙에 관련된 문제라는 것을 알게되었다.<br><br>
-                    
-                    (A+B)%C = ((A%C)+(B%C))%C<br>
-                    나머지 연산은 다음과 같이분배법칙이 성립하는데<br><br>
+                    문제에서 모든 점수에 가장 높은 점수를 나누고 100을 곱해야 한다.<br><br>
 
-                    A = a * C + r1<br>
-                    B = b * C + r2<br>
-                    A는 C로 나누었을 때 몫a와 나머지r1으로 나타낼 수 있고 <br>
-                    B도 마찬가지로 몫b와 나머지r2로 나타낼 수 있다.<br><br>
-
-                    (A+B)%C에 치환하면<br>
-                    (a*C + r1 + b*C + r2)%C가 되고<br>
-                    a*C와 b*C는 A를 C로 나누엇을 대 몫임으로 %C연산을 하면 0이된다.<br><br>
-                    
-                    따라서 (A+B)%C = (r1 + r2)%C이고<br>
-                    r1는 A/C의 나머지임으로 r1 = A%C<br>
-                    r2도 마찬가지로 r2 = B%C가 됨으로 <br>
-                    (A+B)%C = ((A%C)+(B%C))%C가 성립하는 것을 알 수 있다.<br><br>
-
-                    더하기뿐만 아니라 빼기, 곱셈도 성립된다.<br>
-                    단, 나누기는 성립하지 않는다.<br>
+                    예를 들어 A,B,C 점수일 때 최댓값이 B일경우 <br>
+                    (A/B*100 + B/B*100 + C/B*100) / 3이 새로운 평균이된다.<br>
+                    여기서 /B*100는 밖으로 뺄 수 있으니 모든 점수를 더한 값에 마지막에 계산해주면 된다.<br>
                 </p>
             </div>
         </section>
