@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PI Web - b01110</title>
+        <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
+    </head>
+    <body>
+        <header>
+            <div class="base">
+                <div class="logo">
+                    <h1><a href="../../index.html">PeanutInput</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="../../algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="../../games.html"><li>Games</li></a>
+                        <a href="../../paper.html"><li>Papers</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <aside>
+                <ul>
+                    <a href="../dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="../graph.html"><li>Graph</li></a>
+                    <a href="../binary.html"><li>Binary Search</li></a>
+                    <a href="../bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../greedy.html"><li>Greedy</li></a>
+                    <a href="../ccw.html"><li>CCW</li></a>
+                    <a href="../etc.html" id="cursor2"><li>Etc.</li></a>
+                </ul>
+            </aside>
+            <div class="base">
+                <h1>더하기 사이클</h1>
+                <a href="https://www.acmicpc.net/problem/1110"><h2>https://www.acmicpc.net/problem/1110</h2></a>
+                <input type="radio" name="tabs" id="tab1" checked><label for="tab1">C/C++</label>
+                <input type="radio" name="tabs" id="tab2"><label for="tab2">C#</label>
+                <input type="radio" name="tabs" id="tab3"><label for="tab3">Java</label>
+                <input type="radio" name="tabs" id="tab4"><label for="tab4">Python</label>
+                <input type="radio" name="tabs" id="tab5"><label for="tab5">Kotlin</label>
+                <input type="radio" name="tabs" id="tab6"><label for="tab6">JavaScript</label>
+                <input type="radio" name="tabs" id="tab7"><label for="tab7">Dart</label>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/886c19273e4a7e0e4b52a94fe68fac10.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/ca599de2f32fb07c90c2d29f0b7f1465.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/583a62ec68ff89b033213bc20893b3ba.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/6ac9f8c85d678d741f4f0b9c48542cea.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/310da0bd795408bfae67ac063a54b750.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/f33551c490cc2afee65d56cf44ed96b8.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/cdbaecc16e72005557c112ff9ee20834.js"></script></div>
+                <p>
+                    문제에서 주어진 더하기 사이클의 연산을 다음과 같다.<br>
+                    68을 예로 들면 68의 일의 자리가 새로운 수의 십의 자리가되고<br>
+                    각 자리수를 더한 수 6+8=14의 일의 자리가 새로운 수의 일의 자리가되어<br>
+                    최종적으로 84라는 수가 만들어진다.<br>
+                    이러한 방법으로 계속 수를 만들다보면 최초의 숫자인 68로 되돌아 온다는 것이다.<br><br>
+
+                    그렇다면 이제 위 방법을 그대로 변수를 사용해 구현하면된다.<br>
+                    또한 입력된 수의 사이클을 구해야 함으로 최초의 입력값을 저장한 후 <br>
+                    반복문을 돌려 나온 다음 사이클의 수가 최초 입력값과 같을 경우 <br>
+                    반복문을 종료하고 몇 번 반복됐는지 카운트값을 출력하면 된다.<br>
+
+                    값이 일의 자리일 경우 10을 곱하여 두 자리로 만든다는 것에 유념한다.<br>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div class="base">
+                <div class="logo"><h1>PeanutInput</h1></div>
+                <div class="content">
+                    <div class="sitemap">
+                        <ul>
+                            <a href="../../algorithms.html"><li>Algorithms</li></a>
+                            <a href="../dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="../graph.html"><li>Graph</li></a>
+                            <a href="../binary.html"><li>BinarySearch</li></a>
+                            <a href="../bruteforce.html"><li>BruteForce</li></a>
+                            <a href="../greedy.html"><li>Greedy</li></a>
+                            <a href="../ccw.html"><li>CCW</li></a>
+                            <a href="../etc.html"><li>Etc.</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../games.html"><li>Games</li></a>
+                            <a href="../../Games/flappybird.html"><li>FlappyBird</li></a>
+                            <a href="../../Games/angrybird.html"><li>AngryBird</li></a>
+                            <a href="../../Games/galaga.html"><li>Galaga</li></a>
+                            <a href="../../Games/omok.html"><li>Omok</li></a>
+                            <a href="../../Games/othello.html"><li>Othello</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../paper.html"><li>Papers</li></a>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>장대한 DaeHang Jang</p>
+                        <p>phone : 010-2521-9719</p>
+                        <p>e-mail : lchdh0906@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
