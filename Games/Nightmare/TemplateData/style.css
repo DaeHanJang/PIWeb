@@ -1,0 +1,128 @@
+section {
+    width: 100%; 
+    min-width: 1050px; min-height: calc(100vh - 100px);
+    display: flex;
+    background: rgb(245, 245, 245);
+}
+section aside {
+    width: 250px;
+    background: rgb(255, 230, 255);
+}
+section aside ul {
+    width: 250px;
+}
+section aside ul a {
+    width: 250px; height: 50px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+section aside ul a:hover {
+    font-weight: bold;
+    background: rgb(255, 210, 255);
+}
+section aside ul a li {
+    width: 210px; height: 50px;
+    border-bottom: 1px solid gray;
+}
+section aside ul #cursor2 {
+    font-weight: bold;
+    background: rgb(255, 210, 255);
+}
+#unity-container h1 {
+    width: 100%; height: 300px;
+    font-size: 50px;
+    color: white;
+    line-height: 300px;
+    text-align: center;
+    text-shadow: 2px 2px 2px lightgray;
+    background-image: url(../../../Images/nightmare.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#unity-container hr {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+#unity-container.unity-desktop {
+    width: calc(100% - 250px);
+    min-width: 800px; min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: lightblue;
+}
+#unity-container.unity-mobile {
+    width: 100%; height: 100%;
+}
+#unity-canvas {
+    margin: 20px 0;
+    background: #231F20;
+}
+.unity-mobile #unity-canvas {
+    width: 100%; height: 100%;
+}
+.unity-desktop #unity-loading-bar {
+    display: none;
+    position: absolute;
+    left: 50%; top: 535px;
+    transform: translate(-50%, -50%);
+}
+.unity-mobile #unity-loading-bar {
+    display: none;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#unity-logo {
+    width: 154px; height: 130px;
+    background: url('unity-logo-dark.png') no-repeat center;
+}
+#unity-progress-bar-empty {
+    width: 141px; height: 18px;
+    margin-top: 10px; margin-left: 6.5px;
+    background: url('progress-bar-empty-dark.png') no-repeat center;
+}
+#unity-progress-bar-full {
+    width: 0%; height: 18px;
+    margin-top: 10px;
+    background: url('progress-bar-full-dark.png') no-repeat center;
+}
+#unity-warning {
+    max-width: 450px;
+    margin-top: 300px; padding: 10px;
+    display: none;
+    position: absolute;
+    left: 50%; top: 5%;
+    transform: translate(-50%);
+    background: white;
+}
+#unity-footer {
+    width: 800px;
+    margin-bottom: 20px;
+    display: none;
+    position: relative;
+}
+.unity-mobile #unity-footer {
+    display: none;
+}
+#unity-webgl-logo {
+    width: 204px; height: 38px;
+    float:left;
+    background: url('webgl-logo.png') no-repeat center;
+}
+#unity-fullscreen-button {
+    width: 38px; height: 38px;
+    float: right;
+    background: url('fullscreen-button.png') no-repeat center;
+}
+#unity-build-title {
+    margin-right: 10px;
+    float: right;
+    font-family: arial;
+    font-size: 18px;
+    line-height: 38px;
+}
