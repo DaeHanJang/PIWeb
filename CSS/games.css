@@ -88,6 +88,9 @@ section .base .main #tab4:hover~label[for=tab4] {
 section .base .main #tab5:hover~label[for=tab5] {
     background: rgb(200, 200, 200);
 }
+section .base .main #tab6:hover~label[for=tab6] {
+    background: rgb(200, 200, 200);
+}
 section .base .main #tab1:checked~label[for=tab1] {
     background: rgb(220, 220, 220);
 }
@@ -101,6 +104,9 @@ section .base .main #tab4:checked~label[for=tab4] {
     background: rgb(220, 220, 220);
 }
 section .base .main #tab5:checked~label[for=tab5] {
+    background: rgb(220, 220, 220);
+}
+section .base .main #tab6:checked~label[for=tab6] {
     background: rgb(220, 220, 220);
 }
 section .base .main label {
