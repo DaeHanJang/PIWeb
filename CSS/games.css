@@ -73,45 +73,62 @@ section .base .main #tab6:checked~#content6 {
 section .base .main input {
     display: none;
 }
-section .base .main #tab1:hover~label[for=tab1] {
+section .base .main #tab1:hover~.contentbar label[for=tab1] {
     background: rgb(200, 200, 200);
 }
-section .base .main #tab2:hover~label[for=tab2] {
+section .base .main #tab2:hover~.contentbar label[for=tab2] {
     background: rgb(200, 200, 200);
 }
-section .base .main #tab3:hover~label[for=tab3] {
+section .base .main #tab3:hover~.contentbar label[for=tab3] {
     background: rgb(200, 200, 200);
 }
-section .base .main #tab4:hover~label[for=tab4] {
+section .base .main #tab4:hover~.contentbar label[for=tab4] {
     background: rgb(200, 200, 200);
 }
-section .base .main #tab5:hover~label[for=tab5] {
+section .base .main #tab5:hover~.contentbar label[for=tab5] {
     background: rgb(200, 200, 200);
 }
-section .base .main #tab6:hover~label[for=tab6] {
+section .base .main #tab6:hover~.contentbar label[for=tab6] {
     background: rgb(200, 200, 200);
 }
-section .base .main #tab1:checked~label[for=tab1] {
+section .base .main #tab1:checked~.contentbar label[for=tab1] {
     background: rgb(220, 220, 220);
 }
-section .base .main #tab2:checked~label[for=tab2] {
+section .base .main #tab2:checked~.contentbar label[for=tab2] {
     background: rgb(220, 220, 220);
 }
-section .base .main #tab3:checked~label[for=tab3] {
+section .base .main #tab3:checked~.contentbar label[for=tab3] {
     background: rgb(220, 220, 220);
 }
-section .base .main #tab4:checked~label[for=tab4] {
+section .base .main #tab4:checked~.contentbar label[for=tab4] {
     background: rgb(220, 220, 220);
 }
-section .base .main #tab5:checked~label[for=tab5] {
+section .base .main #tab5:checked~.contentbar label[for=tab5] {
     background: rgb(220, 220, 220);
 }
-section .base .main #tab6:checked~label[for=tab6] {
+section .base .main #tab6:checked~.contentbar label[for=tab6] {
     background: rgb(220, 220, 220);
 }
-section .base .main label {
-    width: 180px; height: 80px;
+section .base .main .contentbar {
+    width: 180px; height: 480px;
     margin: 10px 10px;
+    overflow: auto;
+    /*overflow-x: hidden;*/
+}
+section .base .main .contentbar::-webkit-scrollbar {
+    width: 10px;
+}
+section .base .main .contentbar::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+}
+section .base .main .contentbar::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 5px;
+}
+section .base .main .contentbar label {
+    width: 165px; height: 80px;
+    margin: 10px 0;
     padding-left: 10px;
     display: block;
     line-height: 80px;
