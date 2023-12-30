@@ -113,7 +113,7 @@ section .base .main .contentbar {
     width: 180px; height: 480px;
     margin: 10px 10px;
     overflow: auto;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 section .base .main .contentbar::-webkit-scrollbar {
     width: 10px;
