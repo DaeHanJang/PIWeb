@@ -1,0 +1,58 @@
+section {
+    width: 100%; 
+    min-width: 1050px; min-height: calc(100vh - 100px);
+    display: flex;
+    background: rgb(245, 245, 245);
+}
+section aside {
+    width: 250px;
+    background: rgb(255, 230, 255);
+}
+section aside ul {
+    width: 250px;
+}
+section aside ul a {
+    width: 250px; height: 50px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+section aside ul a:hover {
+    font-weight: bold;
+    background: rgb(255, 210, 255);
+}
+section aside ul a li {
+    width: 210px; height: 50px;
+    border-bottom: 1px solid gray;
+}
+section aside ul #cursor2 {
+    font-weight: bold;
+    background: rgb(255, 210, 255);
+}
+#unity-container h1 {
+    width: 100%; height: 300px;
+    font-size: 50px;
+    line-height: 300px;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    background-image: url(../../Images/nightmare.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#unity-container hr {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+#unity-container.unity-desktop {
+    width: calc(100% - 250px);
+    min-width: 800px; min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#unity-container iframe {
+    margin: 20px 0;
+}
