@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PI Web - b02110</title>
+        <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
+    </head>
+    <body>
+        <header style="min-width: 1260px;">
+            <div class="base">
+                <div class="logo">
+                    <h1><a href="../../index.html">PeanutInput</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="../../algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="../../games.html"><li>Games</li></a>
+                        <a href="../../paper.html"><li>Papers</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <aside>
+                <ul>
+                    <a href="../dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="../graph.html"><li>Graph</li></a>
+                    <a href="../binary.html" id="cursor2"><li>Binary Search</li></a>
+                    <a href="../bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../greedy.html"><li>Greedy</li></a>
+                    <a href="../ccw.html"><li>CCW</li></a>
+                    <a href="../etc.html"><li>Etc.</li></a>
+                </ul>
+            </aside>
+            <div class="base">
+                <h1>공유기 설치</h1>
+                <a href="https://www.acmicpc.net/problem/2110"><h2>https://www.acmicpc.net/problem/2110</h2></a>
+                <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
+                <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
+                <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
+                <input type="radio" name="tabs" id="tab4"><label for="tab4"></label>
+                <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
+                <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
+                <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/68f9210f7c2fb7315135801611487912.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/af3c417dd7086c82a16f622324be994a.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/786bd63b9ebb1879073a801e65d6007f.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/968984227fcc60e4b6f2fe8b87d3f2a2.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/6d15e08c4ab5731000e6cd0e8dccd63f.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/0a38b1d794ebe18d183e23c4d66a4491.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/6143cee676c1282d718623522a88a39d.js"></script></div>
+                <hr>
+                <h3>풀이</h3>
+                <p>
+                    먼저 문제를 읽고 정확하게 문제를 이해해야 한다.<br>
+                    n개의 집이 주어지고 설치되어야할 공유기의 갯수 c가 주어진다. 그리고 n개의 집의 각 좌표가 주어진다.<br>
+                    이 문제는 이분 탐색을 통해 해결하는 데 <br>
+                    시작값을 주어진 좌표 중 입접한 좌표의 차가 가장 작은 값으로 하고 끝값을 가장 큰 좌표와 가장 작은 좌표의 차로한다.<br>
+                    그 후 중간값으로 공유기 설치 계산을 하며 공유기 갯수 c와 비교하며 판별을 진행하면 된다.<br>
+                </p>
+            </div>
+        </section>
+        <footer style="min-width: 1260px;">
+            <div class="base">
+                <div class="logo"><h1>PeanutInput</h1></div>
+                <div class="content">
+                    <div class="sitemap">
+                        <ul>
+                            <a href="../../algorithms.html"><li>Algorithms</li></a>
+                            <a href="../dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="../graph.html"><li>Graph</li></a>
+                            <a href="../binary.html"><li>BinarySearch</li></a>
+                            <a href="../bruteforce.html"><li>BruteForce</li></a>
+                            <a href="../greedy.html"><li>Greedy</li></a>
+                            <a href="../ccw.html"><li>CCW</li></a>
+                            <a href="../etc.html"><li>Etc.</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../games.html"><li>Games</li></a>
+                            <a href="../../Games/flappybird.html"><li>FlappyBird</li></a>
+                            <a href="../../Games/angrybird.html"><li>AngryBird</li></a>
+                            <a href="../../Games/galaga.html"><li>Galaga</li></a>
+                            <a href="../../Games/omok.html"><li>Omok</li></a>
+                            <a href="../../Games/othello.html"><li>Othello</li></a>
+                            <a href="../../Games/nightmare.html"><li>Nightmare</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../paper.html"><li>Papers</li></a>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>장대한 DaeHang Jang</p>
+                        <p>phone : 010-2521-9719</p>
+                        <p>e-mail : lchdh0906@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

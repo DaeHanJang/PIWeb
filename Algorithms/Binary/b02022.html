@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PI Web - b02022</title>
+        <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
+    </head>
+    <body>
+        <header style="min-width: 1260px;">
+            <div class="base">
+                <div class="logo">
+                    <h1><a href="../../index.html">PeanutInput</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="../../algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="../../games.html"><li>Games</li></a>
+                        <a href="../../paper.html"><li>Papers</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <aside>
+                <ul>
+                    <a href="../dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="../graph.html"><li>Graph</li></a>
+                    <a href="../binary.html" id="cursor2"><li>Binary Search</li></a>
+                    <a href="../bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../greedy.html"><li>Greedy</li></a>
+                    <a href="../ccw.html"><li>CCW</li></a>
+                    <a href="../etc.html"><li>Etc.</li></a>
+                </ul>
+            </aside>
+            <div class="base">
+                <h1>사다리</h1>
+                <a href="https://www.acmicpc.net/problem/2022"><h2>https://www.acmicpc.net/problem/2022</h2></a>
+                <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
+                <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
+                <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
+                <input type="radio" name="tabs" id="tab4"><label for="tab4"></label>
+                <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
+                <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
+                <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/9954e33f338eb1aca85060aa47c8ae0f.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/e70434d10c7cb18002e1beb8e8e646f9.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/ceebdf820bb41497a8c7e9413728598a.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/dfe175065f20640fbac7a32e02506fb4.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/fd7e85b85f07bc36efde7e4a0a89f323.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/a7881ad24e2168ff5ec08aa5ccfe23ec.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/c80cf7ae2656171eab0a067a6b3de039.js"></script></div>
+                <hr>
+                <h3>풀이</h3>
+                <p>
+                    이분 탐색을 사용한다. 작은 값은 사다라기 딱 붙어있을 경우로 0이며 가장 큰 값은 x, y중 짧은 사다리가 누워있을 경우로 min(x, y)이다.<br>
+                    또한 오차는 10^-3까지 허용함으로 반복문의 조건은 이분 탐색에 시작값과 끝값이의 차가 0.001일 때까지 반복하면 된다.<br>
+                    c값은 구하기 위해서는 먼저 각 사다리가 기대고있는 지점까지의 높이 값을 구해야 하는데 피타고라스의 정리를 사용해 구한다.<br>
+                    각각 xh = sqrt(x^2 - w^2), yh = sqrt(y^2 - w^2)이고 이 높이값을 사용해 삼각형의 각도가 같을 때 가로세로 길이의 비율이 같다는 것을 이용해 <br>
+                    이분 탐색의 시각, 끝값을 통해 최종 도출되는 c값을 비교하여 값을 갱신하며 최종값을 찾아나간다.<br>
+                </p>
+            </div>
+        </section>
+        <footer style="min-width: 1260px;">
+            <div class="base">
+                <div class="logo"><h1>PeanutInput</h1></div>
+                <div class="content">
+                    <div class="sitemap">
+                        <ul>
+                            <a href="../../algorithms.html"><li>Algorithms</li></a>
+                            <a href="../dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="../graph.html"><li>Graph</li></a>
+                            <a href="../binary.html"><li>BinarySearch</li></a>
+                            <a href="../bruteforce.html"><li>BruteForce</li></a>
+                            <a href="../greedy.html"><li>Greedy</li></a>
+                            <a href="../ccw.html"><li>CCW</li></a>
+                            <a href="../etc.html"><li>Etc.</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../games.html"><li>Games</li></a>
+                            <a href="../../Games/flappybird.html"><li>FlappyBird</li></a>
+                            <a href="../../Games/angrybird.html"><li>AngryBird</li></a>
+                            <a href="../../Games/galaga.html"><li>Galaga</li></a>
+                            <a href="../../Games/omok.html"><li>Omok</li></a>
+                            <a href="../../Games/othello.html"><li>Othello</li></a>
+                            <a href="../../Games/nightmare.html"><li>Nightmare</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../paper.html"><li>Papers</li></a>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>장대한 DaeHang Jang</p>
+                        <p>phone : 010-2521-9719</p>
+                        <p>e-mail : lchdh0906@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
