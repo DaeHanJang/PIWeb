@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b10996</title>
+        <title>PI Web - b02725</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>별 찍기 - 21</h1>
-                <a href="https://www.acmicpc.net/problem/10996"><h2>https://www.acmicpc.net/problem/10996</h2></a>
+                <h1>보이는 점의 개수</h1>
+                <a href="https://www.acmicpc.net/problem/2725"><h2>https://www.acmicpc.net/problem/2725</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,18 +45,19 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/488ede36be0c08ab061dfd48428ed6bf.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/08dc1a75d6fe0c653764de443475fed4.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/2acf913ca613217a081b3921379d9892.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/f62b26ade9c71d876b4d99b8dd831f2e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ef723513ebf69bd25ce8501b0b96af08.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/8a7fcca21b2808e1424d7d228752ec15.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/e531ae8101804074069e31b627a52f6e.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/bac45e8b4a86a9c7e76286d01735b549.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/0ed40595b11f8a75e2ae849f6f370810.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/4c309bc5486359ffa298a5bd342a6190.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/607256565e3cd862c45507e0bdf9940f.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/44b6d72586f7da39af04823a9f834644.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/4a8df6245bb9b6efc31c1c96a82987fe.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/f0de026e926d6851b3da661a546f83ec.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    출력 예제를 보면 행은 입력된 값의 2의 배수로 늘어나며 <br>
-                    행이 홀수번째에는 *이먼저 짝수번째에는 공백이 먼저 출력된다는 것을 알면 쉽게 풀수있다.<br>
+                    원점에서 볼 수 있는 점은 중복되지 않은 기울기를 갖는 최초의 점을 볼 수 있다.<br>
+                    기울기의 공식은 'y2 - y1 / x2 - x1'이고 문제는 원점에서 볼 수 있는 점을 찾는 거기 때문에 <br>
+                    입력값 y / x가 기울기가 된다. 따라서 x, y가 서로소인 값을 찾아 누적하면 답을 찾을 수 있다.<br>
                 </p>
             </div>
         </section>

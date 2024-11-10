@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b10996</title>
+        <title>PI Web - b10837</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>별 찍기 - 21</h1>
-                <a href="https://www.acmicpc.net/problem/10996"><h2>https://www.acmicpc.net/problem/10996</h2></a>
+                <h1>동전 게임</h1>
+                <a href="https://www.acmicpc.net/problem/10837"><h2>https://www.acmicpc.net/problem/10837</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,18 +45,27 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/488ede36be0c08ab061dfd48428ed6bf.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/08dc1a75d6fe0c653764de443475fed4.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/2acf913ca613217a081b3921379d9892.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/f62b26ade9c71d876b4d99b8dd831f2e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ef723513ebf69bd25ce8501b0b96af08.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/8a7fcca21b2808e1424d7d228752ec15.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/e531ae8101804074069e31b627a52f6e.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/679e9aaf953436e79b15ef6a016ef409.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/2d360b3d1b94a51cfa6f49d93ba101eb.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/24bf5c633d48dd823ff821618691a0da.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/d4a73c6816c7e108d21cd5c14d9ff94a.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/567a5913d8c6efbecff8a352004f9c87.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/24a2466b4d7671de765ab7fa10065ba3.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/9c61d58c70d3796cfe5b9ec4a40785ee.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    출력 예제를 보면 행은 입력된 값의 2의 배수로 늘어나며 <br>
-                    행이 홀수번째에는 *이먼저 짝수번째에는 공백이 먼저 출력된다는 것을 알면 쉽게 풀수있다.<br>
+                    문제의 핵심은 영희가 먼저 동전을 던진다는 점과 남은 기회가 있더라도 점수 계산 시 이기지 못한다고 판단되면 중지한다는 점이다.<br>
+                    또한 항상 영희가 먼저 던지기 때문에 M>N일 경우와 M&lt;N일 경우를 따로 생각해야 한다.<br>
+                    M=N일 경우는 항상 존재할 수 있다.<br><br>
+
+                    M>N일 경우 N에 K-M이 남은 시도 횟수의 최댓값이라고 생각할 수 있기 때문에 N+K-M의 값이 M보다 작으면 불가능하다고 할 수 있다.<br>
+                    근데 여기서 M-1를 하는 이유는 영희가 먼저 시도하기 때문에 다음 라운드에 영희가 먼저 던지고 동수가 실패할 경우 M+1, N의 경우도 성립하기 때문에 M-1로 보정을 하고 <br>
+                    M-1을 했을 경우 M>N의 조건이기 때문에 -1의 경우는 나올 수 없음으로 사용 가능하다.<br><br>
+
+                    다음으로 M&lt;N일 경우 앞과 마찬가지로 남은 시도 횟수의 최댓값이 K-N이라고 생각할 수 있고 M+K-N의 값이 N보다 작으면 불가능하다고 할 수 있다.<br>
+                    또한 영희가 먼저 시도하기 때문에 영희가 먼저 던지고 실패할 경우 M, N+1의 경우는 성립할 수 없기 때문에 M+K-N-1로 보정을 한다.<br>
+                    N대신 N-1은 위의 경우와 비슷한거 같아서 한거같은데 안해도 될거 같다는 생각이든다.<br>
                 </p>
             </div>
         </section>

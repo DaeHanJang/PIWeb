@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b10996</title>
+        <title>PI Web - b06588</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>별 찍기 - 21</h1>
-                <a href="https://www.acmicpc.net/problem/10996"><h2>https://www.acmicpc.net/problem/10996</h2></a>
+                <h1>골드바흐의 추측</h1>
+                <a href="https://www.acmicpc.net/problem/6588"><h2>https://www.acmicpc.net/problem/6588</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,18 +45,22 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/488ede36be0c08ab061dfd48428ed6bf.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/08dc1a75d6fe0c653764de443475fed4.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/2acf913ca613217a081b3921379d9892.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/f62b26ade9c71d876b4d99b8dd831f2e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ef723513ebf69bd25ce8501b0b96af08.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/8a7fcca21b2808e1424d7d228752ec15.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/e531ae8101804074069e31b627a52f6e.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/eb17db8708697a6afda8bd212d70fdb1.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/b3a1cd886dc18514a9c9bcef00996508.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/060afe9e033aded9dc808ff28909f26a.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/b8fe8d9d371c4ed5df2db3222cb3124b.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/9adda22d9915881c52cc346bcb6c5658.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/a261c778fee87f1f2ad36715bc799e5d.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/afa34f5bb2c50092fdbcf1c1f359853e.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    출력 예제를 보면 행은 입력된 값의 2의 배수로 늘어나며 <br>
-                    행이 홀수번째에는 *이먼저 짝수번째에는 공백이 먼저 출력된다는 것을 알면 쉽게 풀수있다.<br>
+                    이 문제는 시간 제한이 0.5초로 짧은 편이기 때문에 일반적인 반복문으로 소수를 판별할 시 시간 초과가 나게된다.<br>
+                    따라서 소수 판별에 유용한 알고리즘인 에라토스테네스의 체를 사용한다.<br>
+                    에라토스테네스의 체는 2부터 시작하여 2를 제외한 2의 배수를 지우고 3으로 이동하여 3를 제외한 3의 배수를 지우고 <br>
+                    4는 2의 배수를 지울 때 지워졌음으로 넘기고 5로 이동하여 앞에 작업을 똑같이하여 소수를 찾는 방법이다.<br><br>
+
+                    에라토스테네스의 체를 이용한 소수 판별 외에도 반복문의 조건이나 각 언어별로 입출력이 빠른 방법을 사용해 시간을 단축 시키는 것이 해결의 중심이다.<br>
                 </p>
             </div>
         </section>

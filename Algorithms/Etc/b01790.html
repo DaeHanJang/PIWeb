@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b10996</title>
+        <title>PI Web - b01790</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>별 찍기 - 21</h1>
-                <a href="https://www.acmicpc.net/problem/10996"><h2>https://www.acmicpc.net/problem/10996</h2></a>
+                <h1>수 이어 쓰기 2</h1>
+                <a href="https://www.acmicpc.net/problem/1790"><h2>https://www.acmicpc.net/problem/1790</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,18 +45,28 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/488ede36be0c08ab061dfd48428ed6bf.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/08dc1a75d6fe0c653764de443475fed4.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/2acf913ca613217a081b3921379d9892.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/f62b26ade9c71d876b4d99b8dd831f2e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ef723513ebf69bd25ce8501b0b96af08.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/8a7fcca21b2808e1424d7d228752ec15.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/e531ae8101804074069e31b627a52f6e.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/31d6f7bd6bb8e2f08c6571866accd26a.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/054ca419035d87855d66253c5e64cb15.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/3ea5017963f414eebcc973f2c07fb881.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/4c955fa1602d01667a301d391a19ba5e.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/2290022ce42e7a784fc5b546eb1db40b.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/d56476a590ec117feb4819cd722531f7.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/4fb5cb4320da93f118f0f37306e07c2a.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    출력 예제를 보면 행은 입력된 값의 2의 배수로 늘어나며 <br>
-                    행이 홀수번째에는 *이먼저 짝수번째에는 공백이 먼저 출력된다는 것을 알면 쉽게 풀수있다.<br>
+                    이 문제를 풀기위해 내가 생각한 아이디어는 k에 일의 자리부터 일의 자리가 차지하는 자리수의 총합이 작다면 빼고 <br>
+                    다음은 십의 자리가 차지하는 자리수의 총합을 빼는 것을 반복하여 빼야하는 자리수 보다 k가 작아 질때 까지 반복하여 <br>
+                    최종적으로 구해야 하는 값이 몇의 자리의 수인지 구하는 방법을 생각했다.<br><br>
+
+                    각 자리의 수가 차지하는 자리의 갯수는 <br>
+                    일의 자리: 1~9 - 1 * (10 - 1) - 1 * 9<br>
+                    십의 자리: 10~99 - 2 * (100 - 10) - 2 * 90<br>
+                    백의 자리: 100~999 - 3 * (1000 - 100) - 3 * 900<br>
+                    로 결론적으로 9 * d * 10^(d - 1)이라는 식을 도출할 수 있다.<br><br>
+
+                    여기서 구한 각 자리에 따라 차지하는 자리수의 총합을 k에 뺌으로써 무슨 자리인지 구하고 <br>
+                    어떤 수의 몇 번째 자리인지 구하여 문제를 푼다.<br>
                 </p>
             </div>
         </section>

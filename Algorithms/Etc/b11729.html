@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b10996</title>
+        <title>PI Web - b11729</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>별 찍기 - 21</h1>
-                <a href="https://www.acmicpc.net/problem/10996"><h2>https://www.acmicpc.net/problem/10996</h2></a>
+                <h1>하노이 탑 이동 순서</h1>
+                <a href="https://www.acmicpc.net/problem/11729"><h2>https://www.acmicpc.net/problem/11729</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,18 +45,21 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/488ede36be0c08ab061dfd48428ed6bf.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/08dc1a75d6fe0c653764de443475fed4.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/2acf913ca613217a081b3921379d9892.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/f62b26ade9c71d876b4d99b8dd831f2e.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/ef723513ebf69bd25ce8501b0b96af08.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/8a7fcca21b2808e1424d7d228752ec15.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/e531ae8101804074069e31b627a52f6e.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/dfcf5fcf80d0c14d38c77a29591e6c73.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/9d34a3cbcc5705f3d6af5da8fcdc0f72.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/4fc5c88420d0e202997e13fea9a591bd.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/3e6fea3085d950cf8d511a53bdb30ddf.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/797a0a04630a778bc0dc5327ed062fa2.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/b3f534186c12035bd651a8707e4fba95.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/2f05558d080c24afbe43548b7b1b49f9.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    출력 예제를 보면 행은 입력된 값의 2의 배수로 늘어나며 <br>
-                    행이 홀수번째에는 *이먼저 짝수번째에는 공백이 먼저 출력된다는 것을 알면 쉽게 풀수있다.<br>
+                    재귀 함수를 사용해 문제를 풀 수 있다.<br>
+                    하노이 탑은 맨 위에 있는 원판을 하나씩 옮길 수 있고 자기보다 큰 원판은 위에 올라 올 수 없다.<br>
+                    즉 이렇게 생각해 볼 수 있다. n개의 원판이 a에서 c로 가야한다면 <br>
+                    맨 아래 원판을 제외한 n-1개의 원판이 b에 이동하고 맨 아래 원판이 c로 이동후 n-1개의 원판이 그 위로 올라오는 순서를 생각해 볼 수 있다.<br>
+                    이 점을 유념하면서 재귀 함수를 구성한다.<br>
                 </p>
             </div>
         </section>
