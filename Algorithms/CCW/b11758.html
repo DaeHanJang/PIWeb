@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PI Web - b11758</title>
+        <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
+    </head>
+    <body>
+        <header style="min-width: 1260px;">
+            <div class="base">
+                <div class="logo">
+                    <h1><a href="../../index.html">PeanutInput</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="../../algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="../../games.html"><li>Games</li></a>
+                        <a href="../../paper.html"><li>Papers</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <aside>
+                <ul>
+                    <a href="../dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="../graph.html"><li>Graph</li></a>
+                    <a href="../binary.html"><li>Binary Search</li></a>
+                    <a href="../bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../greedy.html"><li>Greedy</li></a>
+                    <a href="../ccw.html" id="cursor2"><li>CCW</li></a>
+                    <a href="../etc.html"><li>Etc.</li></a>
+                </ul>
+            </aside>
+            <div class="base">
+                <h1>CCW</h1>
+                <a href="https://www.acmicpc.net/problem/11758"><h2>https://www.acmicpc.net/problem/11758</h2></a>
+                <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
+                <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
+                <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
+                <input type="radio" name="tabs" id="tab4"><label for="tab4"></label>
+                <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
+                <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
+                <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/dd98b4e838640434af4ed9cfd17dbc2d.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/ef22c0fb18d8cb6e1e7047bd8516d889.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/ec0c8b5813d0b085ad226070f4aedc63.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/df1e30ec1c313ee86d4cb1ecd956edc0.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/a8b3c2793477720621a8ee411924d026.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/f0ac5e2ffc7dec47d90015d187797c99.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/507cb633b2457e43e969962f3f1724e9.js"></script></div>
+                <hr>
+                <h3>풀이</h3>
+                <p>
+                    CCW(Counter Clock Wise) 알고리즘은 3개의 점이 있를 때 이 점 3개를 이은 직선의 방향을 알고자하는 방법이다.<br>
+                    벡터의 외적을 통해 음수이면 시계 방향, 0이면 직선, 양수이면 반시계 방향이다.<br>
+                    외적의 특징은 외적한 두 벡터의 수직 벡터를 알 수 있고 두벡터가 만들어내는 평행사변형의 넓이와 같다는 점이다.<br>
+                    a = (a1, a2, a3), b = (b1, b2, b3)일 때 벡터의 외적은 다음과 같다.<br><br>
+
+                    a x b = (a2b3 - a3b2)i - (a1b3 - a3b1)j + (a1b2 - a2b1)k<br><br>
+
+                    2차원 임으로 z좌표는 0으로 설정하고 다음 식을 이용해 결과 값을 구한다.<br>
+                </p>
+            </div>
+        </section>
+        <footer style="min-width: 1260px;">
+            <div class="base">
+                <div class="logo"><h1>PeanutInput</h1></div>
+                <div class="content">
+                    <div class="sitemap">
+                        <ul>
+                            <a href="../../algorithms.html"><li>Algorithms</li></a>
+                            <a href="../dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="../graph.html"><li>Graph</li></a>
+                            <a href="../binary.html"><li>BinarySearch</li></a>
+                            <a href="../bruteforce.html"><li>BruteForce</li></a>
+                            <a href="../greedy.html"><li>Greedy</li></a>
+                            <a href="../ccw.html"><li>CCW</li></a>
+                            <a href="../etc.html"><li>Etc.</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../games.html"><li>Games</li></a>
+                            <a href="../../Games/flappybird.html"><li>FlappyBird</li></a>
+                            <a href="../../Games/angrybird.html"><li>AngryBird</li></a>
+                            <a href="../../Games/galaga.html"><li>Galaga</li></a>
+                            <a href="../../Games/omok.html"><li>Omok</li></a>
+                            <a href="../../Games/othello.html"><li>Othello</li></a>
+                            <a href="../../Games/nightmare.html"><li>Nightmare</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../paper.html"><li>Papers</li></a>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>장대한 DaeHang Jang</p>
+                        <p>phone : 010-2521-9719</p>
+                        <p>e-mail : lchdh0906@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
