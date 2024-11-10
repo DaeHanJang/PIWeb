@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b01075</title>
+        <title>PI Web - b06064</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>나누기</h1>
-                <a href="https://www.acmicpc.net/problem/1075"><h2>https://www.acmicpc.net/problem/1075</h2></a>
+                <h1>카잉 달력</h1>
+                <a href="https://www.acmicpc.net/problem/6064"><h2>https://www.acmicpc.net/problem/6064</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,25 +45,22 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/583ac6782525c0254f1ecabf5daa0595.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/38dced5480394e63285958bd5f745f32.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/fd06121170e6e50a00a205463fed7a14.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/d6b36428f141667160d795b658639092.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/deb688915fa2a38d453467216c83d27a.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/6e938bca0d899c51f7005e68d28d125b.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/f8263133f2a463b06b258c64b8742d78.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/3910ccb894822d073c1480efba456d9c.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/f30c58d154841564d521c117b8447c16.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/d9a9d8519e10598c2de02e3d6af0cfe8.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/ce80d40c41053d10c7c8feb902a9ff22.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/e59471a705ffce396d0043a3a1c69cd2.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/e0315c2664a0f68b07da0162bf08b125.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/f199a4985cd8f003b4b88c3d0840b401.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    문제에서 N의 십의 자리와 일의 자리를 바꿔 F로 나누어 떨어지게 만들어야한다.<br>
-                    즉 백의 자리를 제외한 뒤 두자리를 00과 가장 가깝게 나누어 떨어지게 만들면 된다.<br><br>
-
-                    그래서 나는 먼저 주어진 N과 F를 이용해 직관적으로 나누어 떨어질 수 있는 숫자 M을 구했는데 <br>
-                    N과 F를 나눈 몫을 F와 곱한 수이다.<br><br>
-
-                    이제 반복문을 통해 답을 구하는데 N/100에 다시 100를 곱하여 뒤 두자리를 00으로 만들고 <br>
-                    M과 비교하며 작을 경우 F를 빼가며 백의 자리가 처음으로 바뀌는 순간 반복문을 빠져나와 <br>
-                    마지막으로 F를 더해 백의 자리이상을 N과 똑같이 유지한 가장 작게 나누어 떨어지는 수를 구했다.<br>
+                    먼저 입력값으로 들어오는 m, n에 대한 카잉 달력의 셀 수 있는 최대 해의 수는 m, n의 최소공배수이다.<br>
+                    그리고 최소공배수는 'm * n / 최대공약수'이기 때문에 최대공약수를 구하는 유클리드 호제법을 사용하여 값을 구한다.<br><br>
+                    
+                    x, y가 표현될 수 있는 해인지 구하는 방법은 반복문을 통해 x에 m을 더한 수가 m, n의 최소공배수와 같가나 작을 때까지 <br>
+                    m을 더해가며 n으로 나눈 나머지가 y와 같은지 비교하면 된다.<br>
+                    주의할 점으로 y의 값이 n과 같을 경우 나누었을 때 0이 됨으로 이 경우에는 y의 값을 0으로 조정해 준다.<br>
                 </p>
             </div>
         </section>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b01075</title>
+        <title>PI Web - b01977</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>나누기</h1>
-                <a href="https://www.acmicpc.net/problem/1075"><h2>https://www.acmicpc.net/problem/1075</h2></a>
+                <h1>완전제곱수</h1>
+                <a href="https://www.acmicpc.net/problem/1977"><h2>https://www.acmicpc.net/problem/1977</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,25 +45,18 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/583ac6782525c0254f1ecabf5daa0595.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/38dced5480394e63285958bd5f745f32.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/fd06121170e6e50a00a205463fed7a14.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/d6b36428f141667160d795b658639092.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/deb688915fa2a38d453467216c83d27a.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/6e938bca0d899c51f7005e68d28d125b.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/f8263133f2a463b06b258c64b8742d78.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/02948ab47f8e652398171cd64022a857.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/13ce365f29d5836d710c95e74c039bfc.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/50ca9aede94e47cead781218b3a57eb7.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/d8248f80d0f198b01a32ae85041f25bf.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/cce0eceee8603818697d0ea5c6d54f72.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/6c75adfe1e96f6ba90addd6394a54d0e.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/6f4d3c7ad0162e27bf8a3949b2886cc1.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    문제에서 N의 십의 자리와 일의 자리를 바꿔 F로 나누어 떨어지게 만들어야한다.<br>
-                    즉 백의 자리를 제외한 뒤 두자리를 00과 가장 가깝게 나누어 떨어지게 만들면 된다.<br><br>
-
-                    그래서 나는 먼저 주어진 N과 F를 이용해 직관적으로 나누어 떨어질 수 있는 숫자 M을 구했는데 <br>
-                    N과 F를 나눈 몫을 F와 곱한 수이다.<br><br>
-
-                    이제 반복문을 통해 답을 구하는데 N/100에 다시 100를 곱하여 뒤 두자리를 00으로 만들고 <br>
-                    M과 비교하며 작을 경우 F를 빼가며 백의 자리가 처음으로 바뀌는 순간 반복문을 빠져나와 <br>
-                    마지막으로 F를 더해 백의 자리이상을 N과 똑같이 유지한 가장 작게 나누어 떨어지는 수를 구했다.<br>
+                    반복문을 통해 입력값 M부터 N까지의 수 중 완전제곱수를 구해 변수에 누적하고 최솟값을 기억하는 아이디어를 사용했다.<br>
+                    M과 N의 최댓값이 10000이고 시간 제한이 2초임으로 반복문을 통해 풀기 적합하다고 판단했다.<br>
                 </p>
             </div>
         </section>

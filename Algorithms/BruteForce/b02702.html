@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b01075</title>
+        <title>PI Web - b02702</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>나누기</h1>
-                <a href="https://www.acmicpc.net/problem/1075"><h2>https://www.acmicpc.net/problem/1075</h2></a>
+                <h1>초6 수학</h1>
+                <a href="https://www.acmicpc.net/problem/2702"><h2>https://www.acmicpc.net/problem/2702</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,25 +45,21 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/583ac6782525c0254f1ecabf5daa0595.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/38dced5480394e63285958bd5f745f32.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/fd06121170e6e50a00a205463fed7a14.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/d6b36428f141667160d795b658639092.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/deb688915fa2a38d453467216c83d27a.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/6e938bca0d899c51f7005e68d28d125b.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/f8263133f2a463b06b258c64b8742d78.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/2cb188b0ab838e9cd1896717ab608599.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/50f5454b366a675f21832a233c769d83.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/60a0fbde06641432b279c2efda406fda.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/25188b5cfb674ffecc9666a9abca4a67.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/1c5438c7cd673c1f3f187fb0aa31d966.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/121126d669b87a936b057b5746dd0766.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/55161989a060928befe2c1eee2051405.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    문제에서 N의 십의 자리와 일의 자리를 바꿔 F로 나누어 떨어지게 만들어야한다.<br>
-                    즉 백의 자리를 제외한 뒤 두자리를 00과 가장 가깝게 나누어 떨어지게 만들면 된다.<br><br>
+                    최대공약수는 유클리드 호제법을 통해 구할 수 있는데 <br>
+                    유클리드 호제법은 최대공약수를 구하는 알고리즘의 하나로 두 수를 서로 나누어 나머지를 구하고 <br>
+                    나머지가 0이 될 때까지 두 수를 나누어 최대공약수를 구하는 방법이다.<br><br>
 
-                    그래서 나는 먼저 주어진 N과 F를 이용해 직관적으로 나누어 떨어질 수 있는 숫자 M을 구했는데 <br>
-                    N과 F를 나눈 몫을 F와 곱한 수이다.<br><br>
-
-                    이제 반복문을 통해 답을 구하는데 N/100에 다시 100를 곱하여 뒤 두자리를 00으로 만들고 <br>
-                    M과 비교하며 작을 경우 F를 빼가며 백의 자리가 처음으로 바뀌는 순간 반복문을 빠져나와 <br>
-                    마지막으로 F를 더해 백의 자리이상을 N과 똑같이 유지한 가장 작게 나누어 떨어지는 수를 구했다.<br>
+                    최대공약수를 구하면 최소공배수는 두 수의 곱에 최대공약수를 나눈값임으로 자동으로 구할 수 있다.<br>
                 </p>
             </div>
         </section>
