@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b02839</title>
+        <title>PI Web - b01449</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>설탕 배달</h1>
-                <a href="https://www.acmicpc.net/problem/2839"><h2>https://www.acmicpc.net/problem/2839</h2></a>
+                <h1>수리공 항승</h1>
+                <a href="https://www.acmicpc.net/problem/1449"><h2>https://www.acmicpc.net/problem/1449</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,24 +45,19 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/d775ea7a7d3f7aea8f1e3cdeda226e3f.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/b3dc9307a1c3faacd8927970edc1895e.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/a4f536e0e65ccde5f6a9138ed6cb9ddc.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/03959ce3f86d01957fe95f369fb9cf4a.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/481c9ca1a52fd262fb389e48867aeaa8.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/270b9c56240e2c8e6e82189eb298116b.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/32e0d4a7da554a96eb3c9f956ab2e8de.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/046a441206599a2311d452e52c76d9b4.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/fd24d621f753f0cf4639b2774b12011a.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/fe979e5bd554ca81a27f3d54d9c67061.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/abc416cfee8b2c14b30f7918a457f314.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/21a4e224ddc3b18d196a40be46febf16.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/a35c674aafa1417fb2bb728648afae8a.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/01a41c67e08dcf0a9d9bd0bd6dc71e21.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    처음 문제를 봤을 때 입력값의 최대값이 5000이고 봉지는 3,5kg이기 때문에 <br>
-                    반복문을 돌려서 해결해도 된다고 생각했다.<br>
-                    실제로 반복문을 돌려 부르트포스로 해결할 수 있었다.<br><br>
-
-                    하지만 그리디 알고리즘으로 해결하는 것이 더 논리적인 풀이법이라고 생각하게 되었다.<br>
-                    5kg로 최대한 담을 수 있을 만큼 담고 나머지를 3kg로 채우면 해결할 수 있기 때문이다.<br><br>
-
-                    다이나믹 프로그래밍 방식의 풀이도 있지만 그리디보다 효율적이라고 느끼진 못했다.<br>
+                    N의 최대값이 1000이기 때문에 1000길이의 bool배열을 선언해 물이 새는 곳을 true설정하고 <br>
+                    반복문을 통해 true인 곳이 발견되면 테이프의 길이 L만큼 앞의 배열을 false로 설정하여 <br>
+                    물을 메꾸는 식으로 하여 테이프의 수를 계산한다.<br>
                 </p>
             </div>
         </section>
