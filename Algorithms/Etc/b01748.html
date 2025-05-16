@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b01546</title>
+        <title>PI Web - b01748</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,8 +36,8 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>평균</h1>
-                <a href="https://www.acmicpc.net/problem/1546"><h2>https://www.acmicpc.net/problem/1546</h2></a>
+                <h1>수 이어 쓰기 1</h1>
+                <a href="https://www.acmicpc.net/problem/1748"><h2>https://www.acmicpc.net/problem/1748</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
@@ -45,19 +45,19 @@
                 <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
                 <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
                 <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/24f8cda0ee699afdb7dd78d968c3f838.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/938fce81837e956d8d283892637769a1.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/04bccbce1ef58562468cd9c043e170d9.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/817d29ccb6e305eeb2155714c85b03b5.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/9bfcee1b3bdce9ad23b0a7b47aa30449.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/01d3927e18237218291400b0f0d3ef0e.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/78d78df49775753c0053c7c2e9dbb3ee.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/cc8dd8621733fe122ac83981f4c7a245.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/48c5cc427a89d2608f6d1a78b54eb484.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/3b0c29e0c60b3f1ac6bd202a8960f54d.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/4d3dcd16b72c16b8f5dcc466422758c1.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/51d37d21f6db70b6e584689422ebfb82.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/983abd9185d0ec2ab3264f02de106e5a.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/ba94e60e1b4dbc640dea771203167a4a.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    점수 a, b, c가 있고 가장 높은 점수가 b일 때 <br>
-                    (a/b*100 + b/b*100 + c/b*100)/3을 구하면 된다.<br>
-                    여기서 /b*100은 결합법칙으로 빼줄 수 있으니 입력값을 누적하고 마지막에 계산해 주면 된다.<br>
+                    입력값 N의 최댓값이 100000000으로 9자릿수임으로 반복문을 사용해 10^I보다 작은지 체크하며 자릿수를 체크했다.<br>
+                    10^I보다 크다면 I * 9 * 10^(I - 1)를 하여 자릿수의 9를 곱해 누적하는데 이전에 이미 전의 자릿수를 누적했기 때문에 그렇다.<br>
+                    10^I보다 작다면 N - 10^(I - 1) + 1를 통해 몇 개의 숫자가 남은지 구하고 I를 곱해 자릿수를 누적하여 계산한다.<br>
                 </p>
             </div>
         </section>
