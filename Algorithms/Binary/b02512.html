@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PI Web - b02512</title>
+        <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
+    </head>
+    <body>
+        <header>
+            <div class="base">
+                <div class="logo">
+                    <h1><a href="../../index.html">PeanutInput</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="../../algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="../../games.html"><li>Games</li></a>
+                        <a href="../../paper.html"><li>Papers</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <aside>
+                <ul>
+                    <a href="../dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="../graph.html"><li>Graph</li></a>
+                    <a href="../binary.html"><li>Binary Search</li></a>
+                    <a href="../bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../greedy.html"><li>Greedy</li></a>
+                    <a href="../ccw.html"><li>CCW</li></a>
+                    <a href="../etc.html" id="cursor2"><li>Etc.</li></a>
+                </ul>
+            </aside>
+            <div class="base">
+                <h1>예산</h1>
+                <a href="https://www.acmicpc.net/problem/2512"><h2>https://www.acmicpc.net/problem/2512</h2></a>
+                <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
+                <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
+                <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
+                <input type="radio" name="tabs" id="tab4"><label for="tab4"></label>
+                <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
+                <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
+                <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/e4c7ff4e2aeabf9e6613c6801bbb8c3e.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/df2163c7f5473d9fde1889ac80f89956.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/702748ad80fbc0646933c117bf401ffa.js"></script></div>
+                <div id="content4"><script src="https://gist.github.com/DaeHanJang/581178a59bbe4282dad5a4cf73027026.js"></script></div>
+                <div id="content5"><script src="https://gist.github.com/DaeHanJang/a16854f00bf1bfbf05813dc89dc1311e.js"></script></div>
+                <div id="content6"><script src="https://gist.github.com/DaeHanJang/4013af3be3719442af1c7638299e1400.js"></script></div>
+                <div id="content7"><script src="https://gist.github.com/DaeHanJang/9ddabad056e5ead6b5a2b535c68dbb7a.js"></script></div>
+                <hr>
+                <h3>풀이</h3>
+                <p>
+                    <img src="../../Images/Algorithms/Exs/b02512-1.png"><br>
+                    문제를 해결하기 위해 몇 가지 과정을 거쳐 예산의 상한을 구하였다.<br>
+                    1. 입력된 예산들을 오름차순으로 정렬한다.<br>
+                    2. 첫번째 요소에 현재 요소부터 마지막 요소까지의 크기(c)만큼 곱한다.<br>
+                    3. 과정 2의 값이 예산총액(m)보다 클 경우 첫번째 요소만큼의 예산의 상한선으로 설정해도 예산총액이 남기때문에 더 크게 설정해도 된다.<br>
+                    따라서 다음 요소로 넘어가 예산의 상한선을 계산하기 위해 현재 요소값을 결과 변수에 누적한 후 m에는 과정 2에서 계산한 값을 빼고 배열의 각 요소에는 현재 요소의 값을 뺀다.<br>
+                    4. 과정 2, 3을 반복하다 과정 2의 값이 m보다 작을 경우 m/c를 결과 변수에 누적하여 예산 상한선을 구한다.<br>
+                    <br>
+                    하지만 위 과정은 언어에 따라 시간초과가 날 가능성이 있다.<br>
+                    이 경우 <a href="../../Papers/binary.html">이분 탐색</a>을 통해 문제를 해결하였다.<br>
+                    최소 예산을 0, 최대 예산을 입력값 중 가장 큰 예산으로 하여 이분탐색을 진행한다.<br>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div class="base">
+                <div class="logo"><h1>PeanutInput</h1></div>
+                <div class="content">
+                    <div class="sitemap">
+                        <ul>
+                            <a href="../../algorithms.html"><li>Algorithms</li></a>
+                            <a href="../dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="../graph.html"><li>Graph</li></a>
+                            <a href="../binary.html"><li>BinarySearch</li></a>
+                            <a href="../bruteforce.html"><li>BruteForce</li></a>
+                            <a href="../greedy.html"><li>Greedy</li></a>
+                            <a href="../ccw.html"><li>CCW</li></a>
+                            <a href="../etc.html"><li>Etc.</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../games.html"><li>Games</li></a>
+                            <a href="../../Games/flappybird.html"><li>FlappyBird</li></a>
+                            <a href="../../Games/angrybird.html"><li>AngryBird</li></a>
+                            <a href="../../Games/galaga.html"><li>Galaga</li></a>
+                            <a href="../../Games/omok.html"><li>Omok</li></a>
+                            <a href="../../Games/othello.html"><li>Othello</li></a>
+                            <a href="../../Games/nightmare.html"><li>Nightmare</li></a>
+                        </ul>
+                        </ul>
+                        <ul>
+                            <a href="../../paper.html"><li>Papers</li></a>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>장대한 DaeHang Jang</p>
+                        <p>phone : 010-2521-9719</p>
+                        <p>e-mail : lchdh0906@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
