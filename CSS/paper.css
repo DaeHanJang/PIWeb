@@ -1,0 +1,9 @@
+section .code {
+    width: 100%; height: 400px;
+    overflow: auto;
+    border: 1px solid black;
+}
+section img {
+    border: 1px solid black;
+    width: 400px;
+}

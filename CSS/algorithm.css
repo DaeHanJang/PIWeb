@@ -124,3 +124,11 @@ section .base p {
     margin-bottom: 40px;
     line-height: 40px;
 }
+section .base p a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+section .base p img {
+    border: 1px solid black;
+    width: 400px;
+}
