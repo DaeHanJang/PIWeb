@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - Modular</title>
+        <title>PI Web - Eratosthenes</title>
         <link rel="stylesheet" text="text/css" href="../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../CSS/paper.css">
         <link rel="stylesheet" text="text/css" href="../CSS/footer.css">
@@ -24,16 +24,23 @@
             </div>
         </header>
         <section>
-            <h1>모듈러(modular) 연산</h1>
+            <h1>에라토스테네스의 체(Sieve of Eratosthenes)</h1>
             <p>
-                모듈러 연산이란 숫자 A를 B로 나눈 나머지를 구하는 연산이다.<br>
-                A mod B = C로 표현할 수 있다.<br>
+                고대 그리스의 수학자 에라토스테네스가 만들어 낸 소수(prime number)를 찾는 방법이다.<br>
+                마치 체로 치듯이 수를 걸러낸다고 하여 에라토스테네스의 체라고 부른다.<br>
                 <br>
-                <h3>모듈러 연산의 특징</h3>
-                모듈러 연산은 다음과 같은 특징을 갖는다.<br>
-                1. (A+B) mod C = (A mod C + B mod C) mod C<br>
-                2. (A-B) mod C = (A mod C - B mod C) mod C<br>
-                3. (A*B) mod C = ((A mod C) * (B mod C)) mod C<br>
+                <h3>과정</h3>
+                1. 첫 소수인 2부터 n까지의 2의 배수들을 모두 제거한다.<br>
+                2. 과정 1에서 3은 제거되지 않았으므로 3부터 n까지의 3의 배수들을 모두 제거한다.<br>
+                3. 4는 과정 1에서 제거되었으므로 다음 숫자로 넘어간다.<br>
+                4. 이런 과정을 n의 제곱근이하의 수까지 체크한다.<br>
+                (n의 제곱근이하의 수까지 반복하는 이유는 n이 120이라고 할 때 
+                120의 제곱근은 10.95...이고 11의 제곱은 121이기 때문에 범위에서 벗어난다.<br>
+                또한 제곱으로 비교하는 이유는 11*2, 11*3, ... 등 그 전까지의 수들은 이미 
+                에라토스테네스의 체에 의해 걸러졌기 때문이다.)<br>
+                <br>
+                <h3>코드</h3>
+                <div class="code"><script src="https://gist.github.com/DaeHanJang/98d42a5557ddfe4fe2f5b3c8ad54eae2.js"></script></div>
             </p>
         </section>
         <footer>

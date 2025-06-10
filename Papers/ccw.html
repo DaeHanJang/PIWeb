@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - Modular</title>
+        <title>PI Web - CCW</title>
         <link rel="stylesheet" text="text/css" href="../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../CSS/paper.css">
         <link rel="stylesheet" text="text/css" href="../CSS/footer.css">
@@ -24,16 +24,29 @@
             </div>
         </header>
         <section>
-            <h1>모듈러(modular) 연산</h1>
+            <h1>CCW(Counter Clock Wise)</h1>
             <p>
-                모듈러 연산이란 숫자 A를 B로 나눈 나머지를 구하는 연산이다.<br>
-                A mod B = C로 표현할 수 있다.<br>
+                3개의 점이 있을 때 점 3개를 이은 직선의 방향을 알고자 할 때 유용한 기하 알고리즘<br>
+                경우의 수는 총 3가지이며 시계(음수), 직선(0), 반시계(양수)이 있으며 이는 외적을 통하여 구할 수 있다.<br>
                 <br>
-                <h3>모듈러 연산의 특징</h3>
-                모듈러 연산은 다음과 같은 특징을 갖는다.<br>
-                1. (A+B) mod C = (A mod C + B mod C) mod C<br>
-                2. (A-B) mod C = (A mod C - B mod C) mod C<br>
-                3. (A*B) mod C = ((A mod C) * (B mod C)) mod C<br>
+                <h3>외적</h3>
+                <img src="../Images/Papers/ccw-1.png"><br>
+                외적은 3차원 공간상의 벡터에 대한 연산 중 하나이다.<br>
+                위 그림은 외적을 행렬을 통해서 구한 것이다.<br>
+                외적은 몇 가지 특징이 있다.<br>
+                1. 두 벡터를 외적하면 두 벡터의 수직 벡터가 나온다.<br>
+                2. 외적은 교환 법칙이 성립하지 않는다. 즉, a x b와 b x a는 다르다.<br>
+                3. 두 벡터의 외적은 두 벡터가 만들어내는 평행사면형의 넓이이다.<br>
+                <br>
+                <h3>과정</h3>
+                <img src="../Images/Papers/ccw-2.png"><br>
+                CCW의 과정은 위 그림과 같다.<br>
+                점 A, B, C가 있을 때 벡터 AB, 벡터 BC를 구하고 외적을 진행한다.<br>
+                외적은 3차원 공간에서의 연산이므로 z좌표를 0으로 두고 외적은 연산한다.<br>
+                z좌표가 0이기 때문에 최종적으로 x, y좌표는 0이고 z좌표가 CCW의 반환값이 된다.<br>
+                <br>
+                <h3>코드</h3>
+                <div class="code"><script src="https://gist.github.com/DaeHanJang/68b0369ce4a53db03ba551846fff7300.js"></script></div>
             </p>
         </section>
         <footer>

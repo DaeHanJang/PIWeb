@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - Modular</title>
+        <title>PI Web - bfs</title>
         <link rel="stylesheet" text="text/css" href="../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../CSS/paper.css">
         <link rel="stylesheet" text="text/css" href="../CSS/footer.css">
@@ -24,16 +24,16 @@
             </div>
         </header>
         <section>
-            <h1>모듈러(modular) 연산</h1>
+            <h1>너비 우선 탐색(BFS, Breadth First Search)</h1>
             <p>
-                모듈러 연산이란 숫자 A를 B로 나눈 나머지를 구하는 연산이다.<br>
-                A mod B = C로 표현할 수 있다.<br>
-                <br>
-                <h3>모듈러 연산의 특징</h3>
-                모듈러 연산은 다음과 같은 특징을 갖는다.<br>
-                1. (A+B) mod C = (A mod C + B mod C) mod C<br>
-                2. (A-B) mod C = (A mod C - B mod C) mod C<br>
-                3. (A*B) mod C = ((A mod C) * (B mod C)) mod C<br>
+                그래프 순회 방식의 일종.<br>
+                루트에서 시작하여 자식 노드들을 저장하고 각각의 자식들의 저장을 반복한다.<br>
+                갈림길에 연결되어 있는 모든 길을 한번씩 탐색한 뒤 다시 연결되어 있는 모든 길을 넓게 탐색한다.<br>
+                큐를 이용하여 구현한다.<br>
+                <img src="../Images/Papers/bfs-1.png">
+                <br><br>
+                <h3>코드</h3>
+                <div class="code"><script src="https://gist.github.com/DaeHanJang/7dfef6de8f561e7aa1bbafdc2082d4e8.js"></script></div>
             </p>
         </section>
         <footer>

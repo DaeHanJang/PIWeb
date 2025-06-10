@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - Modular</title>
+        <title>PI Web - Euclidean</title>
         <link rel="stylesheet" text="text/css" href="../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../CSS/paper.css">
         <link rel="stylesheet" text="text/css" href="../CSS/footer.css">
@@ -24,16 +24,18 @@
             </div>
         </header>
         <section>
-            <h1>모듈러(modular) 연산</h1>
+            <h1>유클리드 호제법(Euclidean Algorithm)</h1>
             <p>
-                모듈러 연산이란 숫자 A를 B로 나눈 나머지를 구하는 연산이다.<br>
-                A mod B = C로 표현할 수 있다.<br>
+                유클리드 호제법이란 최대공약수(greatest common divisor)를 구하는 알고리즘이다.<br>
+                호제법이라는 말은 서로 나누기 때문에 붙여진 이름이다.<br>
                 <br>
-                <h3>모듈러 연산의 특징</h3>
-                모듈러 연산은 다음과 같은 특징을 갖는다.<br>
-                1. (A+B) mod C = (A mod C + B mod C) mod C<br>
-                2. (A-B) mod C = (A mod C - B mod C) mod C<br>
-                3. (A*B) mod C = ((A mod C) * (B mod C)) mod C<br>
+                <h3>과정</h3>
+                1. 두 수 중 큰 수를 작은 수로 나눈다.<br>
+                2. 나머지가 0이면 작은 수가 최대공약수가 된다.<br>
+                3. 나머지가 0이 아니면 작은 수가 큰 수가 되고, 나머지를 작은 수로 대체하고 반복한다.<br>
+                <br>
+                <h3>코드</h3>
+                <div class="code"><script src="https://gist.github.com/DaeHanJang/7532fdbf9dd39fa4ad9fcb1e07a262dd.js"></script></div>
             </p>
         </section>
         <footer>
