@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b02447</title>
+        <title>PI Web - b01337</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,30 +36,24 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>별 찍기 - 10</h1>
-                <a href="https://www.acmicpc.net/problem/2447"><h2>https://www.acmicpc.net/problem/2447</h2></a>
-                <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
-                <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
-                <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
-                <input type="radio" name="tabs" id="tab4"><label for="tab4"></label>
-                <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
-                <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
-                <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/4ea6559854eeb9db6391f3a91ffdb0ce.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/4c55ee91c2cb6379a7004921b6fe3a73.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/5eec11ec54459d1786ba48af0faa6791.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/0611156a80c715613da38fb443517aea.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/e522d3419d083a07a42b38fb677bd802.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/c5be9276f43b4ffd95d51d6c2bfde20d.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/be904f722fcf289a955ef0ec8b6822f9.js"></script></div>
+                <h1>버블 소트</h1>
+                <a href="https://www.acmicpc.net/problem/1337"><h2>https://www.acmicpc.net/problem/1337</h2></a>
+                <input type="radio" name="tabs" id="tab2" checked><label for="tab2"></label>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/81c0b3d4db3d84489a855d49b6a2dd08.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
+                <img src="../../Images/Algorithms/Exs/b01377-1.png"><br>
+                버블 정렬은 위 그림처럼 앞뒤 원소를 비교해가며 마지막 원소부터 정렬한다.<br>
+                하지만 문제에서 버블 정렬을 사용하면 시간 초과가 발생하게 된다.<br>
+                문제에서 제시된 코드를 보면 마지막 원소를 선택하는 것을 1웨이브라고 했을 때 몇 번째 웨이브 때 정렬이 되는가를 묻고있다.<br>
+                이를 위해서는 가장 이동 횟수가 많은 원소를 찾으면 된다.<br>
+                왜냐하면 한 웨이브당 한 번의 움직임을 갖기 때문에 이동이 가장 많은 원소가 버블 정렬의 웨이브 횟수와 같다.<br>
+                <br>
+                입력값과 그 순서를 쌍으로 받는 리스트(l)를 만든다.<br>
+                그 리스트를 오름차순으로 정렬하고 0부터 리스트의 크기(N)만큼 인덱스를 반복하며 리스트의 저장된 순서에 인덱스를 빼며 그 차가 가장 큰 값을 결과값으로 저장한다.<br>
+                정렬되기 전 순서값과 정렬된 후의 순서값을 빼면 움직임의 크기가 나오기 때문이다.<br>
+                마지막으로 결과값에 1을 더하여 출력하는데 문제에서 반복을 1부터 N+1까지 하기 때문이다.<br>
                 <p>
-                    입력값이 3^n이고 구역을 9등분했을 때 가운데 공백이 있는 모양이다.<br>
-                    이런 모양이 구역안에서 또 반복기 때문에 함수의 재귀를 사용한다.<br>
-                    매개변수로 첫 행, 열 지점과 길이를 받는 함수를 통해 <br>
-                    아홉개의 구역중 중앙이 아닌 지역은 길이가 0이 될 때까지 재귀로 반복하고 <br>
-                    중앙인 지역은 요소를 참으로 설정하여 공백을 표시한다.<br>
                 </p>
             </div>
         </section>
@@ -86,7 +80,6 @@
                             <a href="../../Games/omok.html"><li>Omok</li></a>
                             <a href="../../Games/othello.html"><li>Othello</li></a>
                             <a href="../../Games/nightmare.html"><li>Nightmare</li></a>
-                        </ul>
                         </ul>
                         <ul>
                             <a href="../../paper.html"><li>Papers</li></a>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI Web - b02447</title>
+        <title>PI Web - b02448</title>
         <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
         <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
@@ -36,30 +36,34 @@
                 </ul>
             </aside>
             <div class="base">
-                <h1>별 찍기 - 10</h1>
-                <a href="https://www.acmicpc.net/problem/2447"><h2>https://www.acmicpc.net/problem/2447</h2></a>
+                <h1>별 찍기 - 11</h1>
+                <a href="https://www.acmicpc.net/problem/2448"><h2>https://www.acmicpc.net/problem/2448</h2></a>
                 <input type="radio" name="tabs" id="tab1" checked><label for="tab1"></label>
                 <input type="radio" name="tabs" id="tab2"><label for="tab2"></label>
                 <input type="radio" name="tabs" id="tab3"><label for="tab3"></label>
-                <input type="radio" name="tabs" id="tab4"><label for="tab4"></label>
-                <input type="radio" name="tabs" id="tab5"><label for="tab5"></label>
-                <input type="radio" name="tabs" id="tab6"><label for="tab6"></label>
-                <input type="radio" name="tabs" id="tab7"><label for="tab7"></label>
-                <div id="content1"><script src="https://gist.github.com/DaeHanJang/4ea6559854eeb9db6391f3a91ffdb0ce.js"></script></div>
-                <div id="content2"><script src="https://gist.github.com/DaeHanJang/4c55ee91c2cb6379a7004921b6fe3a73.js"></script></div>
-                <div id="content3"><script src="https://gist.github.com/DaeHanJang/5eec11ec54459d1786ba48af0faa6791.js"></script></div>
-                <div id="content4"><script src="https://gist.github.com/DaeHanJang/0611156a80c715613da38fb443517aea.js"></script></div>
-                <div id="content5"><script src="https://gist.github.com/DaeHanJang/e522d3419d083a07a42b38fb677bd802.js"></script></div>
-                <div id="content6"><script src="https://gist.github.com/DaeHanJang/c5be9276f43b4ffd95d51d6c2bfde20d.js"></script></div>
-                <div id="content7"><script src="https://gist.github.com/DaeHanJang/be904f722fcf289a955ef0ec8b6822f9.js"></script></div>
+                <div id="content1"><script src="https://gist.github.com/DaeHanJang/0db7fb202e0313ebb9612a8f49e9aaad.js"></script></div>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/022787907693fff69c5a6f0f914c2de1.js"></script></div>
+                <div id="content3"><script src="https://gist.github.com/DaeHanJang/f09e8029b0567523969e8075473e2964.js"></script></div>
                 <hr>
                 <h3>풀이</h3>
                 <p>
-                    입력값이 3^n이고 구역을 9등분했을 때 가운데 공백이 있는 모양이다.<br>
-                    이런 모양이 구역안에서 또 반복기 때문에 함수의 재귀를 사용한다.<br>
-                    매개변수로 첫 행, 열 지점과 길이를 받는 함수를 통해 <br>
-                    아홉개의 구역중 중앙이 아닌 지역은 길이가 0이 될 때까지 재귀로 반복하고 <br>
-                    중앙인 지역은 요소를 참으로 설정하여 공백을 표시한다.<br>
+                    입력값이 들어오면 적합한 행과 열을 가진 2차원 배열을 생성하고 공백을 채워가는 방식을 사용했다.<br>
+                    입력값으로 들어올 수 있는 값은 3*2^k(0&lt;=k&lt;=10)이고 행(r)은 항상 n개이고 열(c)은 3일 경우 5개이고 나머지는 2*(n-1)개인 성질이 있다.<br>
+                    <br>
+                    먼저 삼각형 외곽 부분을 공백으로 채운다.<br>
+                    최상단의 왼쪽 부분은 0~n-1, 오른쪽 부분은 n~c이 공백이다.<br>
+                    아래로 내려가면서 왼쪽 부분은 마지막 지점이 하나씩 줄어들고 오른쪽 부분은 시작 지점이 하나씩 늘어난다.<br>
+                    <br>
+                    이후 삼각형 내의 공백 부분을 채워야 한다.<br>
+                    삼각형 내의 공백은 삼각형의 중심부가 공백인 것을 알 수 있다.<br>
+                    그리고 삼각형 중심부 외 나머지 부분 삼각형들도 중심부가 공백이다.<br>
+                    이런 성질은 재귀 함수를 통해 구현한다.<br>
+                    삼각형들의 중심부의 시작 지점(i, j)은 i % n == n / 2, j % n == n / 2가 되는 지점이다.<br>
+                    (n이 3일 경우에는 j % n == 2인 지점이다.)<br>
+                    시작 지점을 찾았으면 행(x)은 i부터 i + n / 2개 만큼 <br>
+                    열(y)은 j + x - i부터 j + n - 1개 만큼 공백으로 채우며 다.<br>
+                    (n이 3일 경우에는 열은 1개 만큼 공백으로 채운다.)<br>
+                    이런 과정이 끝나면 입력값의 절반으로 함수를 다시 돌려 입력값이 1보다 클때까지 반복한다.<br>
                 </p>
             </div>
         </section>
