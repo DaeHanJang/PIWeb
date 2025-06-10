@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PI Web - b01939</title>
+        <link rel="stylesheet" text="text/css" href="../../CSS/header.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/algorithm.css">
+        <link rel="stylesheet" text="text/css" href="../../CSS/footer.css">
+    </head>
+    <body>
+        <header>
+            <div class="base">
+                <div class="logo">
+                    <h1><a href="../../index.html">PeanutInput</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="../../algorithms.html" id="cursor"><li>Algorithms</li></a>
+                        <a href="../../games.html"><li>Games</li></a>
+                        <a href="../../paper.html"><li>Papers</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <aside>
+                <ul>
+                    <a href="../dynamic.html"><li>Dynamic Programming</li></a>
+                    <a href="../graph.html"><li>Graph</li></a>
+                    <a href="../binary.html"><li>Binary Search</li></a>
+                    <a href="../bruteforce.html"><li>BruteForce</li></a>
+                    <a href="../greedy.html" id="cursor2"><li>Greedy</li></a>
+                    <a href="../ccw.html"><li>CCW</li></a>
+                    <a href="../etc.html"><li>Etc.</li></a>
+                </ul>
+            </aside>
+            <div class="base">
+                <h1>중량제한</h1>
+                <a href="https://www.acmicpc.net/problem/1939"><h2>https://www.acmicpc.net/problem/1939</h2></a>
+                <input type="radio" name="tabs" id="tab2" checked><label for="tab2"></label>
+                <div id="content2"><script src="https://gist.github.com/DaeHanJang/7f8868c3ca5ec9af9239ceb6da950a7e.js"></script></div>
+                <hr>
+                <h3>풀이</h3>
+                <p>
+                    처음에는 입력된 경로의 중량 제한을 가장 큰 값으로 갱신해가며 <a href="../../Papers/bfs.html">BFS</a>를 이용하여 해결하는 문제인지 알았다.<br>
+                    하지만 시간 초과가 발생했고 <a href="../../Papers/binary.html">이분 탐색</a>을 사용하여 해결할 수 있었다.<br>
+                    <br>
+                    입력된 경로의 중량 제한을 가장 높은 값으로 갱신해가며 가장 작은 값과 큰 값을 저장하고 이분 탐색을 진행한다.<br>
+                    가장 작은 값과 큰 값을 갱신하는 방법에 BFS를 이용한다.<br>
+                    <br>
+                    BFS를 수행하는 함수의 매개 변수는 세 가지이다.<br>
+                    첫 번째는 시작 지점, 두 번째는 도착 지점, 세 번째는 중량값이다.<br>
+                    시작 지점부터 BFS를 수행하는데 중량값을 고려해가며 진행한다.<br>
+                    최종적으로 도착 지점에 도착했다면 현재 중량값은 이동에 문제가 없는 것이므로 이분 탐색의 가장 작은 값을 갱신한다.<br>
+                    반대의 경우에는 큰 값을 갱신한다.<br>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div class="base">
+                <div class="logo"><h1>PeanutInput</h1></div>
+                <div class="content">
+                    <div class="sitemap">
+                        <ul>
+                            <a href="../../algorithms.html"><li>Algorithms</li></a>
+                            <a href="../dynamic.html"><li>DynamicProgramming</li></a>
+                            <a href="../graph.html"><li>Graph</li></a>
+                            <a href="../binary.html"><li>BinarySearch</li></a>
+                            <a href="../bruteforce.html"><li>BruteForce</li></a>
+                            <a href="../greedy.html"><li>Greedy</li></a>
+                            <a href="../ccw.html"><li>CCW</li></a>
+                            <a href="../etc.html"><li>Etc.</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../games.html"><li>Games</li></a>
+                            <a href="../../Games/flappybird.html"><li>FlappyBird</li></a>
+                            <a href="../../Games/angrybird.html"><li>AngryBird</li></a>
+                            <a href="../../Games/galaga.html"><li>Galaga</li></a>
+                            <a href="../../Games/omok.html"><li>Omok</li></a>
+                            <a href="../../Games/othello.html"><li>Othello</li></a>
+                            <a href="../../Games/nightmare.html"><li>Nightmare</li></a>
+                        </ul>
+                        <ul>
+                            <a href="../../paper.html"><li>Papers</li></a>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>장대한 DaeHang Jang</p>
+                        <p>phone : 010-2521-9719</p>
+                        <p>e-mail : lchdh0906@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
